@@ -349,6 +349,24 @@ a:focus {
   left: 195px;
 }
 
+/* line 332, ../sass/style.scss */
+#slide5 .content {
+  background-image: url("../images/slide5-bg.png");
+  width: 950px;
+  height: 700px;
+}
+/* line 338, ../sass/style.scss */
+#slide5 .slide-text {
+  color: #F0D032;
+  font-size: 45px;
+  position: absolute;
+  top: 350px;
+  left: 220px;
+  width: 600px;
+  line-height: normal;
+  letter-spacing: 2px;
+}
+
 /*
     And now we start to style each step separately.
 
@@ -359,12 +377,12 @@ a:focus {
     First is the title step with a big <h1> (no room for padding) and some
     3D positioning along Z axis.
 */
-/* line 342, ../sass/style.scss */
+/* line 362, ../sass/style.scss */
 #title {
   padding: 0;
 }
 
-/* line 346, ../sass/style.scss */
+/* line 366, ../sass/style.scss */
 #title .try {
   font-size: 64px;
   position: absolute;
@@ -377,7 +395,7 @@ a:focus {
   transform: translateZ(20px);
 }
 
-/* line 359, ../sass/style.scss */
+/* line 379, ../sass/style.scss */
 #title h1 {
   font-size: 190px;
   -webkit-transform: translateZ(50px);
@@ -387,7 +405,7 @@ a:focus {
   transform: translateZ(50px);
 }
 
-/* line 369, ../sass/style.scss */
+/* line 389, ../sass/style.scss */
 #title .footnote {
   font-size: 32px;
 }
@@ -398,7 +416,7 @@ a:focus {
 
     Let's move to 'big thoughts' with centered text and custom font sizes.
 */
-/* line 379, ../sass/style.scss */
+/* line 399, ../sass/style.scss */
 #big {
   width: 600px;
   text-align: center;
@@ -406,14 +424,14 @@ a:focus {
   line-height: 1;
 }
 
-/* line 386, ../sass/style.scss */
+/* line 406, ../sass/style.scss */
 #big b {
   display: block;
   font-size: 250px;
   line-height: 250px;
 }
 
-/* line 392, ../sass/style.scss */
+/* line 412, ../sass/style.scss */
 #big .thoughts {
   font-size: 90px;
   line-height: 150px;
@@ -422,7 +440,7 @@ a:focus {
 /*
     'Tiny ideas' just need some tiny styling.
 */
-/* line 400, ../sass/style.scss */
+/* line 420, ../sass/style.scss */
 #tiny {
   width: 500px;
   text-align: center;
@@ -431,7 +449,7 @@ a:focus {
 /*
     This step has some animated text ...
 */
-/* line 408, ../sass/style.scss */
+/* line 428, ../sass/style.scss */
 #ing {
   width: 500px;
 }
@@ -440,7 +458,7 @@ a:focus {
     ... so we define display to `inline-block` to enable transforms and
     transition duration to 0.5s ...
 */
-/* line 416, ../sass/style.scss */
+/* line 436, ../sass/style.scss */
 #ing b {
   display: inline-block;
   -webkit-transition: 0.5s;
@@ -450,7 +468,7 @@ a:focus {
   transition: 0.5s;
 }
 
-/* line 425, ../sass/style.scss */
+/* line 445, ../sass/style.scss */
 #second b {
   display: inline-block;
   -webkit-transition: 0.5s;
@@ -464,7 +482,7 @@ a:focus {
     ... and we want 'positioning` word to move up a bit when the step gets
     `present` class ...
 */
-/* line 438, ../sass/style.scss */
+/* line 458, ../sass/style.scss */
 #ing.present .positioning {
   -webkit-transform: translateY(-10px);
   -moz-transform: translateY(-10px);
@@ -476,7 +494,7 @@ a:focus {
 /*
     ... 'rotating' to rotate a quarter of a second later ...
 */
-/* line 449, ../sass/style.scss */
+/* line 469, ../sass/style.scss */
 #ing.present .rotating {
   -webkit-transform: rotate(-10deg);
   -moz-transform: rotate(-10deg);
@@ -490,7 +508,7 @@ a:focus {
   transition-delay: 0.25s;
 }
 
-/* line 463, ../sass/style.scss */
+/* line 483, ../sass/style.scss */
 #second.present .rotating {
   -webkit-transform: rotate(-3deg);
   -moz-transform: rotate(-3deg);
@@ -507,7 +525,7 @@ a:focus {
 /*
     ... and 'scaling' to scale down after another quarter of a second.
 */
-/* line 480, ../sass/style.scss */
+/* line 500, ../sass/style.scss */
 #ing.present .scaling {
   -webkit-transform: scale(0.7);
   -moz-transform: scale(0.7);
@@ -524,12 +542,12 @@ a:focus {
 /*
     The 'imagination' step is again some boring font-sizing.
 */
-/* line 498, ../sass/style.scss */
+/* line 518, ../sass/style.scss */
 #imagination {
   width: 600px;
 }
 
-/* line 502, ../sass/style.scss */
+/* line 522, ../sass/style.scss */
 #imagination .imagination {
   font-size: 78px;
 }
@@ -544,7 +562,7 @@ a:focus {
 
     Just make sure you don't blindly copy this approach.
 */
-/* line 516, ../sass/style.scss */
+/* line 536, ../sass/style.scss */
 #source {
   width: 700px;
   padding-bottom: 300px;
@@ -554,7 +572,7 @@ a:focus {
   background-repeat: no-repeat;
 }
 
-/* line 526, ../sass/style.scss */
+/* line 546, ../sass/style.scss */
 #source q {
   font-size: 60px;
 }
@@ -567,7 +585,7 @@ a:focus {
     It is not needed by webkit browsers, but it is in Firefox. It's hard to say
     which behaviour is correct as 3D transforms spec is not very clear about it.
 */
-/* line 538, ../sass/style.scss */
+/* line 558, ../sass/style.scss */
 #its-in-3d p {
   -webkit-transform-style: preserve-3d;
   -moz-transform-style: preserve-3d;
@@ -583,7 +601,7 @@ a:focus {
 
     Quite a simple idea, but lot's of styles and prefixes.
 */
-/* line 553, ../sass/style.scss */
+/* line 573, ../sass/style.scss */
 #its-in-3d span,
 #its-in-3d b {
   display: inline-block;
@@ -599,7 +617,7 @@ a:focus {
   transition: 0.5s;
 }
 
-/* line 568, ../sass/style.scss */
+/* line 588, ../sass/style.scss */
 #its-in-3d .have {
   -webkit-transform: translateZ(-40px);
   -moz-transform: translateZ(-40px);
@@ -608,7 +626,7 @@ a:focus {
   transform: translateZ(-40px);
 }
 
-/* line 576, ../sass/style.scss */
+/* line 596, ../sass/style.scss */
 #its-in-3d .you {
   -webkit-transform: translateZ(20px);
   -moz-transform: translateZ(20px);
@@ -617,7 +635,7 @@ a:focus {
   transform: translateZ(20px);
 }
 
-/* line 584, ../sass/style.scss */
+/* line 604, ../sass/style.scss */
 #its-in-3d .noticed {
   -webkit-transform: translateZ(-40px);
   -moz-transform: translateZ(-40px);
@@ -626,7 +644,7 @@ a:focus {
   transform: translateZ(-40px);
 }
 
-/* line 592, ../sass/style.scss */
+/* line 612, ../sass/style.scss */
 #its-in-3d .its {
   -webkit-transform: translateZ(60px);
   -moz-transform: translateZ(60px);
@@ -635,7 +653,7 @@ a:focus {
   transform: translateZ(60px);
 }
 
-/* line 600, ../sass/style.scss */
+/* line 620, ../sass/style.scss */
 #its-in-3d .in {
   -webkit-transform: translateZ(-10px);
   -moz-transform: translateZ(-10px);
@@ -644,7 +662,7 @@ a:focus {
   transform: translateZ(-10px);
 }
 
-/* line 608, ../sass/style.scss */
+/* line 628, ../sass/style.scss */
 #its-in-3d .footnote {
   font-size: 32px;
   -webkit-transform: translateZ(-10px);
@@ -654,7 +672,7 @@ a:focus {
   transform: translateZ(-10px);
 }
 
-/* line 619, ../sass/style.scss */
+/* line 639, ../sass/style.scss */
 #its-in-3d.present span,
 #its-in-3d.present b {
   -webkit-transform: translateZ(0px);
@@ -670,7 +688,7 @@ a:focus {
     to be able to click on other steps.
 
 */
-/* line 633, ../sass/style.scss */
+/* line 653, ../sass/style.scss */
 #overview {
   display: none;
 }
@@ -679,7 +697,7 @@ a:focus {
     We also make other steps visible and give them a pointer cursor using the
     `impress-on-` class.
 */
-/* line 641, ../sass/style.scss */
+/* line 661, ../sass/style.scss */
 .impress-on-overview .step {
   opacity: 1;
   cursor: pointer;
@@ -726,7 +744,7 @@ a:focus {
 
     I know, it sounds complicated ... maybe it would be easier with the code?
 */
-/* line 688, ../sass/style.scss */
+/* line 708, ../sass/style.scss */
 .hint {
   /*
       We hide the hint until presentation is started and from browsers not supporting
@@ -778,7 +796,7 @@ a:focus {
 /*
     Now we 'enable' the hint when presentation is initialized ...
 */
-/* line 746, ../sass/style.scss */
+/* line 766, ../sass/style.scss */
 .impress-enabled .hint {
   display: block;
 }
@@ -786,7 +804,7 @@ a:focus {
 /*
     ... and we will show it when the first step (with id 'bored') is active.
 */
-/* line 753, ../sass/style.scss */
+/* line 773, ../sass/style.scss */
 .impress-on-bored .hint {
   /*
       We remove the transparency and position the hint in its default fixed
@@ -834,12 +852,12 @@ a:focus {
 
     So use it wisely ... or don't use at all.
 */
-/* line 802, ../sass/style.scss */
+/* line 822, ../sass/style.scss */
 .impress-enabled {
   pointer-events: none;
 }
 
-/* line 806, ../sass/style.scss */
+/* line 826, ../sass/style.scss */
 .impress-enabled #impress {
   pointer-events: auto;
 }

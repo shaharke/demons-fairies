@@ -327,6 +327,26 @@ a:focus {
   }
 }
 
+#slide5 {
+
+  .content {
+    background-image: url("../images/slide5-bg.png");
+    width: 950px;
+    height: 700px;
+  }
+
+  .slide-text {
+    color: #F0D032;
+    font-size: 45px;
+    position: absolute;
+    top: 350px;
+    left: 220px;
+    width: 600px;
+    line-height: normal;
+    letter-spacing: 2px;
+  }
+}
+
 
 /*
     And now we start to style each step separately.
