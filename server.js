@@ -12,7 +12,7 @@ app.configure(function(){
   app.use(express.session());
 
   app.use(app.router);
-  app.use(express.static(path.join(__dirname, 'client')));
+  app.use(express.static(__dirname));
 });
 
 app.configure('development', function(){
