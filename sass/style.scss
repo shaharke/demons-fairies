@@ -3,9 +3,9 @@
 @import "compass/css3/text-shadow";
 @import "compass/css3/font-face";
 
-@include font-face("Copystruct", font-files("/css/fonts/copystruct/COPYN.woff", "/css/fonts/copystruct/COPYN.ttf", "/css/fonts/copystruct/COPYN.eot", "/css/fonts/copystruct/COPYN.svg"));
-@include font-face("Bebas", font-files("/css/fonts/bebas/BebasNeue.woff", "/css/fonts/bebas/BebasNeue.ttf", "/css/fonts/bebas/BebasNeue.eot", "/css/fonts/bebas/BebasNeue.svg"));
-@include font-face("SourceSans", font-files("/css/fonts/source-sans/SourceSansPro-Regular.woff", "/css/fonts/source-sans/SourceSansPro-Regular.ttf", "/css/fonts/source-sans/SourceSansPro-Regular.eot", "/css/fonts/source-sans/SourceSansPro-Regular.svg"));
+@include font-face("Copystruct", font-files("copystruct/COPYN.woff", "copystruct/COPYN.ttf", "copystruct/COPYN.eot", "copystruct/COPYN.svg"));
+@include font-face("Bebas", font-files("bebas/BebasNeue.woff", "bebas/BebasNeue.ttf", "bebas/BebasNeue.eot", "bebas/BebasNeue.svg"));
+@include font-face("SourceSans", font-files("source-sans/SourceSansPro-Regular.woff", "source-sans/SourceSansPro-Regular.ttf", "source-sans/SourceSansPro-Regular.eot", "source-sans/SourceSansPro-Regular.svg"));
 
 /*
    So you like the style of impress.js demo?

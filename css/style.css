@@ -1,16 +1,16 @@
 @font-face {
   font-family: "Copystruct";
-  src: url(/css/fonts/copystruct/COPYN.woff) format('woff'), url(/css/fonts/copystruct/COPYN.ttf) format('truetype'), url(/css/fonts/copystruct/COPYN.eot) format('embedded-opentype'), url(/css/fonts/copystruct/COPYN.svg) format('svg');
+  src: url('/css/fonts/copystruct/COPYN.woff') format('woff'), url('/css/fonts/copystruct/COPYN.ttf') format('truetype'), url('/css/fonts/copystruct/COPYN.eot') format('embedded-opentype'), url('/css/fonts/copystruct/COPYN.svg') format('svg');
 }
 
 @font-face {
   font-family: "Bebas";
-  src: url(/css/fonts/bebas/BebasNeue.woff) format('woff'), url(/css/fonts/bebas/BebasNeue.ttf) format('truetype'), url(/css/fonts/bebas/BebasNeue.eot) format('embedded-opentype'), url(/css/fonts/bebas/BebasNeue.svg) format('svg');
+  src: url('/css/fonts/bebas/BebasNeue.woff') format('woff'), url('/css/fonts/bebas/BebasNeue.ttf') format('truetype'), url('/css/fonts/bebas/BebasNeue.eot') format('embedded-opentype'), url('/css/fonts/bebas/BebasNeue.svg') format('svg');
 }
 
 @font-face {
   font-family: "SourceSans";
-  src: url(/css/fonts/source-sans/SourceSansPro-Regular.woff) format('woff'), url(/css/fonts/source-sans/SourceSansPro-Regular.ttf) format('truetype'), url(/css/fonts/source-sans/SourceSansPro-Regular.eot) format('embedded-opentype'), url(/css/fonts/source-sans/SourceSansPro-Regular.svg) format('svg');
+  src: url('/css/fonts/source-sans/SourceSansPro-Regular.woff') format('woff'), url('/css/fonts/source-sans/SourceSansPro-Regular.ttf') format('truetype'), url('/css/fonts/source-sans/SourceSansPro-Regular.eot') format('embedded-opentype'), url('/css/fonts/source-sans/SourceSansPro-Regular.svg') format('svg');
 }
 
 /*
