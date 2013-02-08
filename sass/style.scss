@@ -330,23 +330,67 @@ a:focus {
 #slide5 {
 
   .content {
-    background-image: url("../images/slide5-bg.png");
-    width: 950px;
+    width: 720px;
     height: 700px;
+
+  }
+
+  .text-box {
+    background-image: url("../images/slide5-bg.png");
+    background-repeat: no-repeat;
+    width: 720px;
+    height: 250px;
+    position: absolute;
+    top:305px;
+    left: 80px;
   }
 
   .slide-text {
+    margin: auto;
+    margin-top: 55px;
     color: #F0D032;
     font-size: 45px;
-    position: absolute;
-    top: 350px;
-    left: 220px;
     width: 600px;
     line-height: normal;
     letter-spacing: 2px;
   }
-}
 
+  .mask {
+    position: absolute;
+    overflow: hidden;
+
+    &.top {
+      width: 900px;
+      height: 30px;
+      background-color: white;
+      position: absolute;
+      top: 0px;
+    }
+
+    &.bottom {
+      width: 900px;
+      height: 40px;
+      background-color: white;
+      position: absolute;
+      top: 670px;
+    }
+  }
+
+  .circle-container {
+    position: absolute;
+  }
+
+  .circle {
+    @include border-radius(50%);
+    background-color: #82251A;
+    width: 780px;
+    height: 710px;
+    z-index: -1;
+    left: 125px;
+    //position:absolute;
+
+  }
+}
 
 /*
     And now we start to style each step separately.
