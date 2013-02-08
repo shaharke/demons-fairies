@@ -286,6 +286,30 @@ a:focus {
   }
 }
 
+#slide3 {
+
+  .container {
+    @include background-image(linear-gradient(rgb(130, 37, 26), rgb(237, 223, 221)));
+    width: 950px;
+  }
+
+  .content {
+    background-image: url("../images/slide3-bg.png");
+    width: 950px;
+    height: 700px;
+  }
+
+  .slide-text {
+    color: white;
+    font-size: 22px;
+    width: 700px;
+    position: absolute;
+    top: 115px;
+    left: 200px;
+  }
+
+}
+
 /*
     And now we start to style each step separately.
 
