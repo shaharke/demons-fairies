@@ -310,6 +310,24 @@ a:focus {
 
 }
 
+#slide4 {
+
+  .content {
+    background-image: url("../images/slide4-bg.png");
+    width: 950px;
+    height: 700px;
+  }
+
+  .slide-text {
+    color: #333333;
+    font-size: 54px;
+    position: absolute;
+    top: 340px;
+    left: 195px;
+  }
+}
+
+
 /*
     And now we start to style each step separately.
 
