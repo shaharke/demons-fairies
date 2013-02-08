@@ -67,7 +67,7 @@ table {
 }
 
 body {
-  font-family: 'PT Sans', sans-serif;
+  font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
   min-height: 740px;
 
   @include background-image(linear-gradient(rgb(130, 37, 26), rgb(237, 223, 221)));
