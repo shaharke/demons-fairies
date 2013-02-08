@@ -1,5 +1,6 @@
 @import "compass/css3";
 @import "compass/css3/transform";
+@import "compass/css3/text-shadow";
 
 /*
    So you like the style of impress.js demo?
@@ -198,7 +199,7 @@ a:focus {
     height: 700px;
 
     &::after {
-      clear:both;
+      clear: both;
     }
   }
 
@@ -213,7 +214,7 @@ a:focus {
     @include rotate(-13deg);
   }
 
-  #slide-text {
+  .slide-text {
     position: absolute;
     color: #AF2819;
     top: 510px;
@@ -221,8 +222,59 @@ a:focus {
     left: 200px;
 
   }
+}
 
+#slide2 {
 
+  .container {
+    @include background-image(linear-gradient(rgb(130, 37, 26), rgb(237, 223, 221)));
+    width: 950px;
+  }
+
+  .content {
+    background-image: url("../images/slide2-bg.png");
+    width: 950px;
+    height: 700px;
+  }
+
+  .slide-text {
+    position: absolute;
+    color: #AF2819;
+    top: 325px;
+    font-size: 30px;
+    left: 150px;
+
+    &>:first-child {
+
+      color: white;
+
+      @include rotate(-2deg);
+
+      em {
+        color: #DBBD2D;
+        font-style: normal;
+      }
+    }
+
+    &>:last-child {
+      margin-top: 45px;
+      margin-left: 100px;
+      font-size: 35px;
+      color: #DBBD2D;
+
+      @include text-shadow(black 3px 4px 1px);
+      @include rotate(3deg);
+    }
+  }
+
+  #blue-arrow {
+    background-image: url("../images/blue-arrow.png");
+    height: 200px;
+    width: 300px;
+    position: absolute;
+    top: 480px;
+    right: -100px;
+  }
 }
 
 /*
@@ -235,8 +287,6 @@ a:focus {
     First is the title step with a big <h1> (no room for padding) and some
     3D positioning along Z axis.
 */
-
-
 
 #title {
   padding: 0;
