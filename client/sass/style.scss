@@ -67,10 +67,8 @@ table {
 }
 
 body {
-  font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+  font-family: 'PT Sans', sans-serif;
   min-height: 740px;
-
-  @include background-image(linear-gradient(rgb(130, 37, 26), rgb(237, 223, 221)));
 }
 
 /*
@@ -188,9 +186,43 @@ a:focus {
 }
 
 #slide1 {
-  background-image: url("../images/slide1-bg.png");
-  width: 950px;
-  height: 700px;
+
+  .container {
+    @include background-image(linear-gradient(rgb(130, 37, 26), rgb(237, 223, 221)));
+    width: 950px;
+  }
+
+  .content {
+    background-image: url("../images/slide1-bg.png");
+    width: 950px;
+    height: 700px;
+
+    &::after {
+      clear:both;
+    }
+  }
+
+  #arrow-text {
+    position: absolute;
+    top: 350px;
+    left: 60px;
+    font-size: 22px;
+    width: 243px;
+    color: #30A1D3;
+
+    @include rotate(-13deg);
+  }
+
+  #slide-text {
+    position: absolute;
+    color: #AF2819;
+    top: 510px;
+    font-size: 38px;
+    left: 200px;
+
+  }
+
+
 }
 
 /*
@@ -204,24 +236,7 @@ a:focus {
     3D positioning along Z axis.
 */
 
-#arrow-text {
-  position: absolute;
-  top: 307px;
-  font-size: 22px;
-  width: 243px;
-  color: #30A1D3;
 
-  @include rotate(-13deg);
-}
-
-#slide-text {
-  position: absolute;
-  color: #AF2819;
-  top: 472px;
-  font-size: 38px;
-  left: 125px;
-
-}
 
 #title {
   padding: 0;
