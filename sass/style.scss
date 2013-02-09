@@ -2,10 +2,22 @@
 @import "compass/css3/transform";
 @import "compass/css3/text-shadow";
 @import "compass/css3/font-face";
+@import "compass/css3/box-sizing";
 
 @include font-face("Copystruct", font-files("copystruct/COPYN.woff", "copystruct/COPYN.ttf", "copystruct/COPYN.eot", "copystruct/COPYN.svg"));
 @include font-face("Bebas", font-files("bebas/BebasNeue.woff", "bebas/BebasNeue.ttf", "bebas/BebasNeue.eot", "bebas/BebasNeue.svg"));
 @include font-face("SourceSans", font-files("source-sans/SourceSansPro-Regular.woff", "source-sans/SourceSansPro-Regular.ttf", "source-sans/SourceSansPro-Regular.eot", "source-sans/SourceSansPro-Regular.svg"));
+
+
+@mixin blue-arrow($top, $left) {
+  background-image: url("../images/blue-arrow.png");
+  background-repeat: no-repeat;
+  height: 200px;
+  width: 300px;
+  position: absolute;
+  top: $top;
+  right: $left;
+}
 
 /*
    So you like the style of impress.js demo?
@@ -156,16 +168,11 @@ a:focus {
   width: 900px;
   padding: 40px;
   margin: 20px auto;
-
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -ms-box-sizing: border-box;
-  -o-box-sizing: border-box;
-  box-sizing: border-box;
-
   font-family: "SourceSans";
   font-size: 48px;
   line-height: 1.5;
+
+  @include box-sizing(border-box);
 }
 
 /*
@@ -191,11 +198,15 @@ a:focus {
 
 }
 
+.container {
+  height: 700px;
+  width: 900px;
+}
+
 #slide1 {
 
   .container {
     @include background-image(linear-gradient(rgb(130, 37, 26), rgb(237, 223, 221)));
-    width: 950px;
   }
 
   .content {
@@ -236,7 +247,6 @@ a:focus {
 
   .container {
     @include background-image(linear-gradient(rgb(130, 37, 26), rgb(237, 223, 221)));
-    width: 950px;
   }
 
   .content {
@@ -277,20 +287,16 @@ a:focus {
   }
 
   #blue-arrow {
-    background-image: url("../images/blue-arrow.png");
-    height: 200px;
-    width: 300px;
-    position: absolute;
-    top: 480px;
-    right: -100px;
+    @include blue-arrow(480px, -100px);
   }
 }
+
+
 
 #slide3 {
 
   .container {
     @include background-image(linear-gradient(rgb(130, 37, 26), rgb(237, 223, 221)));
-    width: 950px;
   }
 
   .content {
@@ -390,6 +396,54 @@ a:focus {
     //position:absolute;
 
   }
+}
+
+#slide6 {
+  .text-box {
+    background-image: url("../images/yellow-text-area.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    top:200px;
+    left:100px;
+    width:800px;
+    height:225px;
+
+    .text {
+      font-size:40px;
+      width: 660px;
+      position: absolute;
+      top:25px;
+      left:30px;
+      color:#333333;
+    }
+  }
+
+  .bottom-section {
+
+    position: absolute;
+    top: 400px;
+    left: 200px;
+
+    .question {
+      line-height: normal;
+      font-family: Bebas;
+
+      span {
+        color:#33A9DD;
+      }
+
+      >div {
+        color:#DBBD2D;
+      }
+    }
+
+  }
+
+  .arrow {
+    @include blue-arrow(600px, 0px);
+  }
+
+
 }
 
 /*
