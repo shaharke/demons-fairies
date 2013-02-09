@@ -204,7 +204,7 @@ a:focus {
 /* line 201, ../sass/style.scss */
 .container {
   height: 700px;
-  width: 900px;
+  width: 960px;
 }
 
 /* line 208, ../sass/style.scss */
@@ -252,20 +252,12 @@ a:focus {
 }
 
 /* line 248, ../sass/style.scss */
-#slide2 .container {
-  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #82251a), color-stop(100%, #eddfdd));
-  background-image: -webkit-linear-gradient(#82251a, #eddfdd);
-  background-image: -moz-linear-gradient(#82251a, #eddfdd);
-  background-image: -o-linear-gradient(#82251a, #eddfdd);
-  background-image: linear-gradient(#82251a, #eddfdd);
-}
-/* line 252, ../sass/style.scss */
 #slide2 .content {
   background-image: url("../images/slide2-bg.png");
   width: 950px;
   height: 700px;
 }
-/* line 258, ../sass/style.scss */
+/* line 254, ../sass/style.scss */
 #slide2 .slide-text {
   position: absolute;
   color: #AF2819;
@@ -273,7 +265,7 @@ a:focus {
   font-size: 30px;
   left: 150px;
 }
-/* line 265, ../sass/style.scss */
+/* line 261, ../sass/style.scss */
 #slide2 .slide-text > :first-child {
   color: white;
   -webkit-transform: rotate(-2deg);
@@ -282,12 +274,12 @@ a:focus {
   -o-transform: rotate(-2deg);
   transform: rotate(-2deg);
 }
-/* line 271, ../sass/style.scss */
+/* line 267, ../sass/style.scss */
 #slide2 .slide-text > :first-child em {
   color: #DBBD2D;
   font-style: normal;
 }
-/* line 277, ../sass/style.scss */
+/* line 273, ../sass/style.scss */
 #slide2 .slide-text > :last-child {
   margin-top: 45px;
   margin-left: 100px;
@@ -301,7 +293,7 @@ a:focus {
   -o-transform: rotate(3deg);
   transform: rotate(3deg);
 }
-/* line 289, ../sass/style.scss */
+/* line 285, ../sass/style.scss */
 #slide2 #blue-arrow {
   background-image: url("../images/blue-arrow.png");
   background-repeat: no-repeat;
@@ -312,7 +304,7 @@ a:focus {
   right: -100px;
 }
 
-/* line 298, ../sass/style.scss */
+/* line 294, ../sass/style.scss */
 #slide3 .container {
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #82251a), color-stop(100%, #eddfdd));
   background-image: -webkit-linear-gradient(#82251a, #eddfdd);
@@ -320,13 +312,13 @@ a:focus {
   background-image: -o-linear-gradient(#82251a, #eddfdd);
   background-image: linear-gradient(#82251a, #eddfdd);
 }
-/* line 302, ../sass/style.scss */
+/* line 298, ../sass/style.scss */
 #slide3 .content {
   background-image: url("../images/slide3-bg.png");
   width: 950px;
   height: 700px;
 }
-/* line 308, ../sass/style.scss */
+/* line 304, ../sass/style.scss */
 #slide3 .slide-text {
   color: white;
   font-size: 22px;
@@ -336,13 +328,13 @@ a:focus {
   left: 200px;
 }
 
-/* line 321, ../sass/style.scss */
+/* line 317, ../sass/style.scss */
 #slide4 .content {
   background-image: url("../images/slide4-bg.png");
   width: 950px;
   height: 700px;
 }
-/* line 327, ../sass/style.scss */
+/* line 323, ../sass/style.scss */
 #slide4 .slide-text {
   color: #333333;
   font-size: 54px;
@@ -351,12 +343,12 @@ a:focus {
   left: 195px;
 }
 
-/* line 338, ../sass/style.scss */
+/* line 334, ../sass/style.scss */
 #slide5 .content {
   width: 720px;
   height: 700px;
 }
-/* line 344, ../sass/style.scss */
+/* line 340, ../sass/style.scss */
 #slide5 .text-box {
   background-image: url("../images/slide5-bg.png");
   background-repeat: no-repeat;
@@ -366,7 +358,7 @@ a:focus {
   top: 305px;
   left: 80px;
 }
-/* line 354, ../sass/style.scss */
+/* line 350, ../sass/style.scss */
 #slide5 .slide-text {
   margin: auto;
   margin-top: 55px;
@@ -376,12 +368,12 @@ a:focus {
   line-height: normal;
   letter-spacing: 2px;
 }
-/* line 364, ../sass/style.scss */
+/* line 360, ../sass/style.scss */
 #slide5 .mask {
   position: absolute;
   overflow: hidden;
 }
-/* line 368, ../sass/style.scss */
+/* line 364, ../sass/style.scss */
 #slide5 .mask.top {
   width: 900px;
   height: 30px;
@@ -389,7 +381,7 @@ a:focus {
   position: absolute;
   top: 0px;
 }
-/* line 376, ../sass/style.scss */
+/* line 372, ../sass/style.scss */
 #slide5 .mask.bottom {
   width: 900px;
   height: 40px;
@@ -397,11 +389,11 @@ a:focus {
   position: absolute;
   top: 670px;
 }
-/* line 385, ../sass/style.scss */
+/* line 381, ../sass/style.scss */
 #slide5 .circle-container {
   position: absolute;
 }
-/* line 389, ../sass/style.scss */
+/* line 385, ../sass/style.scss */
 #slide5 .circle {
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -415,7 +407,7 @@ a:focus {
   left: 125px;
 }
 
-/* line 402, ../sass/style.scss */
+/* line 398, ../sass/style.scss */
 #slide6 .text-box {
   background-image: url("../images/yellow-text-area.png");
   background-repeat: no-repeat;
@@ -425,7 +417,7 @@ a:focus {
   width: 800px;
   height: 225px;
 }
-/* line 411, ../sass/style.scss */
+/* line 407, ../sass/style.scss */
 #slide6 .text-box .text {
   font-size: 40px;
   width: 660px;
@@ -434,26 +426,26 @@ a:focus {
   left: 30px;
   color: #333333;
 }
-/* line 421, ../sass/style.scss */
+/* line 417, ../sass/style.scss */
 #slide6 .bottom-section {
   position: absolute;
   top: 400px;
   left: 200px;
 }
-/* line 427, ../sass/style.scss */
+/* line 423, ../sass/style.scss */
 #slide6 .bottom-section .question {
   line-height: normal;
   font-family: Bebas;
 }
-/* line 431, ../sass/style.scss */
+/* line 427, ../sass/style.scss */
 #slide6 .bottom-section .question span {
   color: #33A9DD;
 }
-/* line 435, ../sass/style.scss */
+/* line 431, ../sass/style.scss */
 #slide6 .bottom-section .question > div {
   color: #DBBD2D;
 }
-/* line 442, ../sass/style.scss */
+/* line 438, ../sass/style.scss */
 #slide6 .arrow {
   background-image: url("../images/blue-arrow.png");
   background-repeat: no-repeat;
@@ -474,12 +466,12 @@ a:focus {
     First is the title step with a big <h1> (no room for padding) and some
     3D positioning along Z axis.
 */
-/* line 460, ../sass/style.scss */
+/* line 456, ../sass/style.scss */
 #title {
   padding: 0;
 }
 
-/* line 464, ../sass/style.scss */
+/* line 460, ../sass/style.scss */
 #title .try {
   font-size: 64px;
   position: absolute;
@@ -492,7 +484,7 @@ a:focus {
   transform: translateZ(20px);
 }
 
-/* line 477, ../sass/style.scss */
+/* line 473, ../sass/style.scss */
 #title h1 {
   font-size: 190px;
   -webkit-transform: translateZ(50px);
@@ -502,7 +494,7 @@ a:focus {
   transform: translateZ(50px);
 }
 
-/* line 487, ../sass/style.scss */
+/* line 483, ../sass/style.scss */
 #title .footnote {
   font-size: 32px;
 }
@@ -513,7 +505,7 @@ a:focus {
 
     Let's move to 'big thoughts' with centered text and custom font sizes.
 */
-/* line 497, ../sass/style.scss */
+/* line 493, ../sass/style.scss */
 #big {
   width: 600px;
   text-align: center;
@@ -521,14 +513,14 @@ a:focus {
   line-height: 1;
 }
 
-/* line 504, ../sass/style.scss */
+/* line 500, ../sass/style.scss */
 #big b {
   display: block;
   font-size: 250px;
   line-height: 250px;
 }
 
-/* line 510, ../sass/style.scss */
+/* line 506, ../sass/style.scss */
 #big .thoughts {
   font-size: 90px;
   line-height: 150px;
@@ -537,7 +529,7 @@ a:focus {
 /*
     'Tiny ideas' just need some tiny styling.
 */
-/* line 518, ../sass/style.scss */
+/* line 514, ../sass/style.scss */
 #tiny {
   width: 500px;
   text-align: center;
@@ -546,7 +538,7 @@ a:focus {
 /*
     This step has some animated text ...
 */
-/* line 526, ../sass/style.scss */
+/* line 522, ../sass/style.scss */
 #ing {
   width: 500px;
 }
@@ -555,7 +547,7 @@ a:focus {
     ... so we define display to `inline-block` to enable transforms and
     transition duration to 0.5s ...
 */
-/* line 534, ../sass/style.scss */
+/* line 530, ../sass/style.scss */
 #ing b {
   display: inline-block;
   -webkit-transition: 0.5s;
@@ -565,7 +557,7 @@ a:focus {
   transition: 0.5s;
 }
 
-/* line 543, ../sass/style.scss */
+/* line 539, ../sass/style.scss */
 #second b {
   display: inline-block;
   -webkit-transition: 0.5s;
@@ -579,7 +571,7 @@ a:focus {
     ... and we want 'positioning` word to move up a bit when the step gets
     `present` class ...
 */
-/* line 556, ../sass/style.scss */
+/* line 552, ../sass/style.scss */
 #ing.present .positioning {
   -webkit-transform: translateY(-10px);
   -moz-transform: translateY(-10px);
@@ -591,7 +583,7 @@ a:focus {
 /*
     ... 'rotating' to rotate a quarter of a second later ...
 */
-/* line 567, ../sass/style.scss */
+/* line 563, ../sass/style.scss */
 #ing.present .rotating {
   -webkit-transform: rotate(-10deg);
   -moz-transform: rotate(-10deg);
@@ -605,7 +597,7 @@ a:focus {
   transition-delay: 0.25s;
 }
 
-/* line 581, ../sass/style.scss */
+/* line 577, ../sass/style.scss */
 #second.present .rotating {
   -webkit-transform: rotate(-3deg);
   -moz-transform: rotate(-3deg);
@@ -622,7 +614,7 @@ a:focus {
 /*
     ... and 'scaling' to scale down after another quarter of a second.
 */
-/* line 598, ../sass/style.scss */
+/* line 594, ../sass/style.scss */
 #ing.present .scaling {
   -webkit-transform: scale(0.7);
   -moz-transform: scale(0.7);
@@ -639,12 +631,12 @@ a:focus {
 /*
     The 'imagination' step is again some boring font-sizing.
 */
-/* line 616, ../sass/style.scss */
+/* line 612, ../sass/style.scss */
 #imagination {
   width: 600px;
 }
 
-/* line 620, ../sass/style.scss */
+/* line 616, ../sass/style.scss */
 #imagination .imagination {
   font-size: 78px;
 }
@@ -659,7 +651,7 @@ a:focus {
 
     Just make sure you don't blindly copy this approach.
 */
-/* line 634, ../sass/style.scss */
+/* line 630, ../sass/style.scss */
 #source {
   width: 700px;
   padding-bottom: 300px;
@@ -669,7 +661,7 @@ a:focus {
   background-repeat: no-repeat;
 }
 
-/* line 644, ../sass/style.scss */
+/* line 640, ../sass/style.scss */
 #source q {
   font-size: 60px;
 }
@@ -682,7 +674,7 @@ a:focus {
     It is not needed by webkit browsers, but it is in Firefox. It's hard to say
     which behaviour is correct as 3D transforms spec is not very clear about it.
 */
-/* line 656, ../sass/style.scss */
+/* line 652, ../sass/style.scss */
 #its-in-3d p {
   -webkit-transform-style: preserve-3d;
   -moz-transform-style: preserve-3d;
@@ -698,7 +690,7 @@ a:focus {
 
     Quite a simple idea, but lot's of styles and prefixes.
 */
-/* line 671, ../sass/style.scss */
+/* line 667, ../sass/style.scss */
 #its-in-3d span,
 #its-in-3d b {
   display: inline-block;
@@ -714,7 +706,7 @@ a:focus {
   transition: 0.5s;
 }
 
-/* line 686, ../sass/style.scss */
+/* line 682, ../sass/style.scss */
 #its-in-3d .have {
   -webkit-transform: translateZ(-40px);
   -moz-transform: translateZ(-40px);
@@ -723,7 +715,7 @@ a:focus {
   transform: translateZ(-40px);
 }
 
-/* line 694, ../sass/style.scss */
+/* line 690, ../sass/style.scss */
 #its-in-3d .you {
   -webkit-transform: translateZ(20px);
   -moz-transform: translateZ(20px);
@@ -732,7 +724,7 @@ a:focus {
   transform: translateZ(20px);
 }
 
-/* line 702, ../sass/style.scss */
+/* line 698, ../sass/style.scss */
 #its-in-3d .noticed {
   -webkit-transform: translateZ(-40px);
   -moz-transform: translateZ(-40px);
@@ -741,7 +733,7 @@ a:focus {
   transform: translateZ(-40px);
 }
 
-/* line 710, ../sass/style.scss */
+/* line 706, ../sass/style.scss */
 #its-in-3d .its {
   -webkit-transform: translateZ(60px);
   -moz-transform: translateZ(60px);
@@ -750,7 +742,7 @@ a:focus {
   transform: translateZ(60px);
 }
 
-/* line 718, ../sass/style.scss */
+/* line 714, ../sass/style.scss */
 #its-in-3d .in {
   -webkit-transform: translateZ(-10px);
   -moz-transform: translateZ(-10px);
@@ -759,7 +751,7 @@ a:focus {
   transform: translateZ(-10px);
 }
 
-/* line 726, ../sass/style.scss */
+/* line 722, ../sass/style.scss */
 #its-in-3d .footnote {
   font-size: 32px;
   -webkit-transform: translateZ(-10px);
@@ -769,7 +761,7 @@ a:focus {
   transform: translateZ(-10px);
 }
 
-/* line 737, ../sass/style.scss */
+/* line 733, ../sass/style.scss */
 #its-in-3d.present span,
 #its-in-3d.present b {
   -webkit-transform: translateZ(0px);
@@ -785,7 +777,7 @@ a:focus {
     to be able to click on other steps.
 
 */
-/* line 751, ../sass/style.scss */
+/* line 747, ../sass/style.scss */
 #overview {
   display: none;
 }
@@ -794,7 +786,7 @@ a:focus {
     We also make other steps visible and give them a pointer cursor using the
     `impress-on-` class.
 */
-/* line 759, ../sass/style.scss */
+/* line 755, ../sass/style.scss */
 .impress-on-overview .step {
   opacity: 1;
   cursor: pointer;
@@ -841,7 +833,7 @@ a:focus {
 
     I know, it sounds complicated ... maybe it would be easier with the code?
 */
-/* line 806, ../sass/style.scss */
+/* line 802, ../sass/style.scss */
 .hint {
   /*
       We hide the hint until presentation is started and from browsers not supporting
@@ -893,7 +885,7 @@ a:focus {
 /*
     Now we 'enable' the hint when presentation is initialized ...
 */
-/* line 864, ../sass/style.scss */
+/* line 860, ../sass/style.scss */
 .impress-enabled .hint {
   display: block;
 }
@@ -901,7 +893,7 @@ a:focus {
 /*
     ... and we will show it when the first step (with id 'bored') is active.
 */
-/* line 871, ../sass/style.scss */
+/* line 867, ../sass/style.scss */
 .impress-on-bored .hint {
   /*
       We remove the transparency and position the hint in its default fixed
@@ -949,12 +941,12 @@ a:focus {
 
     So use it wisely ... or don't use at all.
 */
-/* line 920, ../sass/style.scss */
+/* line 916, ../sass/style.scss */
 .impress-enabled {
   pointer-events: none;
 }
 
-/* line 924, ../sass/style.scss */
+/* line 920, ../sass/style.scss */
 .impress-enabled #impress {
   pointer-events: auto;
 }

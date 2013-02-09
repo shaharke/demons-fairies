@@ -200,7 +200,7 @@ a:focus {
 
 .container {
   height: 700px;
-  width: 900px;
+  width: 960px;
 }
 
 #slide1 {
@@ -244,10 +244,6 @@ a:focus {
 }
 
 #slide2 {
-
-  .container {
-    @include background-image(linear-gradient(rgb(130, 37, 26), rgb(237, 223, 221)));
-  }
 
   .content {
     background-image: url("../images/slide2-bg.png");
