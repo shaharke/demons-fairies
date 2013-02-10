@@ -8,7 +8,6 @@
 @include font-face("Bebas", font-files("bebas/BebasNeue.woff", "bebas/BebasNeue.ttf", "bebas/BebasNeue.eot", "bebas/BebasNeue.svg"));
 @include font-face("SourceSans", font-files("source-sans/SourceSansPro-Regular.woff", "source-sans/SourceSansPro-Regular.ttf", "source-sans/SourceSansPro-Regular.eot", "source-sans/SourceSansPro-Regular.svg"));
 
-
 @mixin blue-arrow($top, $left) {
   background-image: url("../images/blue-arrow.png");
   background-repeat: no-repeat;
@@ -17,6 +16,15 @@
   position: absolute;
   top: $top;
   right: $left;
+}
+
+@mixin red-text-box($width) {
+  text-align: center;
+  background-color: #82251A;
+  width: $width;
+  font-size: 38px;
+  color: #ffffff;
+  font-family: Bebas;
 }
 
 /*
@@ -287,8 +295,6 @@ a:focus {
   }
 }
 
-
-
 #slide3 {
 
   .container {
@@ -343,7 +349,7 @@ a:focus {
     width: 720px;
     height: 250px;
     position: absolute;
-    top:305px;
+    top: 305px;
     left: 80px;
   }
 
@@ -399,18 +405,18 @@ a:focus {
     background-image: url("../images/yellow-text-area.png");
     background-repeat: no-repeat;
     position: absolute;
-    top:200px;
-    left:100px;
-    width:800px;
-    height:225px;
+    top: 200px;
+    left: 100px;
+    width: 800px;
+    height: 225px;
 
     .text {
-      font-size:40px;
+      font-size: 40px;
       width: 660px;
       position: absolute;
-      top:25px;
-      left:30px;
-      color:#333333;
+      top: 25px;
+      left: 30px;
+      color: #333333;
     }
   }
 
@@ -425,11 +431,11 @@ a:focus {
       font-family: Bebas;
 
       span {
-        color:#33A9DD;
+        color: #33A9DD;
       }
 
       >div {
-        color:#DBBD2D;
+        color: #DBBD2D;
       }
     }
 
@@ -437,6 +443,88 @@ a:focus {
 
   .arrow {
     @include blue-arrow(600px, 0px);
+  }
+}
+
+#slide7 {
+  .top {
+
+    position: relative;
+    height: 300px;
+
+    .yellow {
+      width: 546px;
+      height: 150px;
+      left: 100px;
+      background-image: url("../images/yellow-text-area-with-border.png");
+      background-repeat: no-repeat;
+      position: absolute;
+      z-index: 100;
+
+      .text {
+        width: 380px;
+        position: absolute;
+        top: 25px;
+        left: 80px;
+
+        line-height: normal;
+
+        font-family: Bebas;
+        font-size: 30px;
+
+        color: white;
+        text-shadow: -1px -1px 2px rgba(100, 100, 100, 0.9);
+      }
+    }
+
+    .black {
+      width: 780px;
+      height: 158px;
+      background-image: url("../images/black-text-area.png");
+      background-repeat: no-repeat;
+      position: absolute;
+      top:105px;
+
+      .text {
+        line-height: normal;
+        color: white;
+        font-size: 20px;
+        top: 40px;
+        position: absolute;
+        left: 37px;
+        width: 685px;
+      }
+    }
+  }
+
+  .bottom {
+    position: absolute;
+    top:270px;
+    width:750px;
+
+    >div {
+      margin: auto;
+      margin-bottom: 20px;
+      padding: 0px 5px 0px 5px;
+      @include box-sizing(border-box);
+    }
+
+    .red-text-area {
+
+      &:first-child {
+        @include red-text-box(330px);
+      }
+
+      &.second{
+        @include red-text-box(205px);
+      }
+
+    }
+
+    .contact {
+      color:white;
+      font-size: 22px;
+    }
   }
 }
 

@@ -40,7 +40,7 @@
    You can probably argue if it is needed here, or not, but for sure it
    doesn't do any harm and gives us a fresh start.
 */
-/* line 49, ../sass/style.scss */
+/* line 57, ../sass/style.scss */
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
   margin: 0;
   padding: 0;
@@ -51,41 +51,41 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 }
 
 /* HTML5 display-role reset for older browsers */
-/* line 60, ../sass/style.scss */
+/* line 68, ../sass/style.scss */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
   display: block;
 }
 
-/* line 64, ../sass/style.scss */
+/* line 72, ../sass/style.scss */
 body {
   line-height: 1;
 }
 
-/* line 68, ../sass/style.scss */
+/* line 76, ../sass/style.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 72, ../sass/style.scss */
+/* line 80, ../sass/style.scss */
 blockquote, q {
   quotes: none;
 }
 
-/* line 77, ../sass/style.scss */
+/* line 85, ../sass/style.scss */
 blockquote:before, blockquote:after,
 q:before, q:after {
   content: '';
   content: none;
 }
 
-/* line 82, ../sass/style.scss */
+/* line 90, ../sass/style.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 87, ../sass/style.scss */
+/* line 95, ../sass/style.scss */
 body {
   font-family: "SourceSans";
   min-height: 740px;
@@ -94,12 +94,12 @@ body {
 /*
     Now let's bring some text styles back ...
 */
-/* line 95, ../sass/style.scss */
+/* line 103, ../sass/style.scss */
 b, strong {
   font-weight: bold;
 }
 
-/* line 99, ../sass/style.scss */
+/* line 107, ../sass/style.scss */
 i, em {
   font-style: italic;
 }
@@ -107,7 +107,7 @@ i, em {
 /*
     ... and give links a nice look.
 */
-/* line 106, ../sass/style.scss */
+/* line 114, ../sass/style.scss */
 a {
   color: inherit;
   text-decoration: none;
@@ -122,7 +122,7 @@ a {
   transition: 0.5s;
 }
 
-/* line 122, ../sass/style.scss */
+/* line 130, ../sass/style.scss */
 a:hover,
 a:focus {
   background: white;
@@ -140,7 +140,7 @@ a:focus {
 
     And then we hide the message, when support is detected in the browser.
 */
-/* line 139, ../sass/style.scss */
+/* line 147, ../sass/style.scss */
 .fallback-message {
   font-family: sans-serif;
   line-height: 1.3;
@@ -152,12 +152,12 @@ a:focus {
   background: #EEDC94;
 }
 
-/* line 152, ../sass/style.scss */
+/* line 160, ../sass/style.scss */
 .fallback-message p {
   margin-bottom: 10px;
 }
 
-/* line 156, ../sass/style.scss */
+/* line 164, ../sass/style.scss */
 .impress-supported .fallback-message {
   display: none;
 }
@@ -167,7 +167,7 @@ a:focus {
 
     We start with basics to make sure it displays correctly in everywhere ...
 */
-/* line 166, ../sass/style.scss */
+/* line 174, ../sass/style.scss */
 .step {
   position: relative;
   width: 900px;
@@ -186,7 +186,7 @@ a:focus {
 
     Basically we remove the margin and make inactive steps a little bit transparent.
 */
-/* line 184, ../sass/style.scss */
+/* line 192, ../sass/style.scss */
 .impress-enabled .step {
   margin: 0;
   opacity: 0.3;
@@ -196,18 +196,18 @@ a:focus {
   -o-transition: opacity 1s;
   transition: opacity 1s;
 }
-/* line 194, ../sass/style.scss */
+/* line 202, ../sass/style.scss */
 .impress-enabled .step.active {
   opacity: 1;
 }
 
-/* line 201, ../sass/style.scss */
+/* line 209, ../sass/style.scss */
 .container {
   height: 700px;
   width: 960px;
 }
 
-/* line 208, ../sass/style.scss */
+/* line 216, ../sass/style.scss */
 #slide1 .container {
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #82251a), color-stop(100%, #eddfdd));
   background-image: -webkit-linear-gradient(#82251a, #eddfdd);
@@ -215,17 +215,17 @@ a:focus {
   background-image: -o-linear-gradient(#82251a, #eddfdd);
   background-image: linear-gradient(#82251a, #eddfdd);
 }
-/* line 212, ../sass/style.scss */
+/* line 220, ../sass/style.scss */
 #slide1 .content {
   background-image: url("../images/slide1-bg.png");
   width: 950px;
   height: 700px;
 }
-/* line 217, ../sass/style.scss */
+/* line 225, ../sass/style.scss */
 #slide1 .content::after {
   clear: both;
 }
-/* line 222, ../sass/style.scss */
+/* line 230, ../sass/style.scss */
 #slide1 #arrow-text {
   font-family: "Copystruct";
   position: absolute;
@@ -240,7 +240,7 @@ a:focus {
   -o-transform: rotate(-13deg);
   transform: rotate(-13deg);
 }
-/* line 234, ../sass/style.scss */
+/* line 242, ../sass/style.scss */
 #slide1 .slide-text {
   line-height: 48px;
   width: 600px;
@@ -251,13 +251,13 @@ a:focus {
   left: 200px;
 }
 
-/* line 248, ../sass/style.scss */
+/* line 256, ../sass/style.scss */
 #slide2 .content {
   background-image: url("../images/slide2-bg.png");
   width: 950px;
   height: 700px;
 }
-/* line 254, ../sass/style.scss */
+/* line 262, ../sass/style.scss */
 #slide2 .slide-text {
   position: absolute;
   color: #AF2819;
@@ -265,7 +265,7 @@ a:focus {
   font-size: 30px;
   left: 150px;
 }
-/* line 261, ../sass/style.scss */
+/* line 269, ../sass/style.scss */
 #slide2 .slide-text > :first-child {
   color: white;
   -webkit-transform: rotate(-2deg);
@@ -274,12 +274,12 @@ a:focus {
   -o-transform: rotate(-2deg);
   transform: rotate(-2deg);
 }
-/* line 267, ../sass/style.scss */
+/* line 275, ../sass/style.scss */
 #slide2 .slide-text > :first-child em {
   color: #DBBD2D;
   font-style: normal;
 }
-/* line 273, ../sass/style.scss */
+/* line 281, ../sass/style.scss */
 #slide2 .slide-text > :last-child {
   margin-top: 45px;
   margin-left: 100px;
@@ -293,7 +293,7 @@ a:focus {
   -o-transform: rotate(3deg);
   transform: rotate(3deg);
 }
-/* line 285, ../sass/style.scss */
+/* line 293, ../sass/style.scss */
 #slide2 #blue-arrow {
   background-image: url("../images/blue-arrow.png");
   background-repeat: no-repeat;
@@ -304,7 +304,7 @@ a:focus {
   right: -100px;
 }
 
-/* line 294, ../sass/style.scss */
+/* line 300, ../sass/style.scss */
 #slide3 .container {
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #82251a), color-stop(100%, #eddfdd));
   background-image: -webkit-linear-gradient(#82251a, #eddfdd);
@@ -312,13 +312,13 @@ a:focus {
   background-image: -o-linear-gradient(#82251a, #eddfdd);
   background-image: linear-gradient(#82251a, #eddfdd);
 }
-/* line 298, ../sass/style.scss */
+/* line 304, ../sass/style.scss */
 #slide3 .content {
   background-image: url("../images/slide3-bg.png");
   width: 950px;
   height: 700px;
 }
-/* line 304, ../sass/style.scss */
+/* line 310, ../sass/style.scss */
 #slide3 .slide-text {
   color: white;
   font-size: 22px;
@@ -328,13 +328,13 @@ a:focus {
   left: 200px;
 }
 
-/* line 317, ../sass/style.scss */
+/* line 323, ../sass/style.scss */
 #slide4 .content {
   background-image: url("../images/slide4-bg.png");
   width: 950px;
   height: 700px;
 }
-/* line 323, ../sass/style.scss */
+/* line 329, ../sass/style.scss */
 #slide4 .slide-text {
   color: #333333;
   font-size: 54px;
@@ -343,12 +343,12 @@ a:focus {
   left: 195px;
 }
 
-/* line 334, ../sass/style.scss */
+/* line 340, ../sass/style.scss */
 #slide5 .content {
   width: 720px;
   height: 700px;
 }
-/* line 340, ../sass/style.scss */
+/* line 346, ../sass/style.scss */
 #slide5 .text-box {
   background-image: url("../images/slide5-bg.png");
   background-repeat: no-repeat;
@@ -358,7 +358,7 @@ a:focus {
   top: 305px;
   left: 80px;
 }
-/* line 350, ../sass/style.scss */
+/* line 356, ../sass/style.scss */
 #slide5 .slide-text {
   margin: auto;
   margin-top: 55px;
@@ -368,12 +368,12 @@ a:focus {
   line-height: normal;
   letter-spacing: 2px;
 }
-/* line 360, ../sass/style.scss */
+/* line 366, ../sass/style.scss */
 #slide5 .mask {
   position: absolute;
   overflow: hidden;
 }
-/* line 364, ../sass/style.scss */
+/* line 370, ../sass/style.scss */
 #slide5 .mask.top {
   width: 900px;
   height: 30px;
@@ -381,7 +381,7 @@ a:focus {
   position: absolute;
   top: 0px;
 }
-/* line 372, ../sass/style.scss */
+/* line 378, ../sass/style.scss */
 #slide5 .mask.bottom {
   width: 900px;
   height: 40px;
@@ -389,11 +389,11 @@ a:focus {
   position: absolute;
   top: 670px;
 }
-/* line 381, ../sass/style.scss */
+/* line 387, ../sass/style.scss */
 #slide5 .circle-container {
   position: absolute;
 }
-/* line 385, ../sass/style.scss */
+/* line 391, ../sass/style.scss */
 #slide5 .circle {
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -407,7 +407,7 @@ a:focus {
   left: 125px;
 }
 
-/* line 398, ../sass/style.scss */
+/* line 404, ../sass/style.scss */
 #slide6 .text-box {
   background-image: url("../images/yellow-text-area.png");
   background-repeat: no-repeat;
@@ -417,7 +417,7 @@ a:focus {
   width: 800px;
   height: 225px;
 }
-/* line 407, ../sass/style.scss */
+/* line 413, ../sass/style.scss */
 #slide6 .text-box .text {
   font-size: 40px;
   width: 660px;
@@ -426,26 +426,26 @@ a:focus {
   left: 30px;
   color: #333333;
 }
-/* line 417, ../sass/style.scss */
+/* line 423, ../sass/style.scss */
 #slide6 .bottom-section {
   position: absolute;
   top: 400px;
   left: 200px;
 }
-/* line 423, ../sass/style.scss */
+/* line 429, ../sass/style.scss */
 #slide6 .bottom-section .question {
   line-height: normal;
   font-family: Bebas;
 }
-/* line 427, ../sass/style.scss */
+/* line 433, ../sass/style.scss */
 #slide6 .bottom-section .question span {
   color: #33A9DD;
 }
-/* line 431, ../sass/style.scss */
+/* line 437, ../sass/style.scss */
 #slide6 .bottom-section .question > div {
   color: #DBBD2D;
 }
-/* line 438, ../sass/style.scss */
+/* line 444, ../sass/style.scss */
 #slide6 .arrow {
   background-image: url("../images/blue-arrow.png");
   background-repeat: no-repeat;
@@ -456,7 +456,92 @@ a:focus {
   right: 0px;
 }
 
-/* line 443, ../sass/style.scss */
+/* line 450, ../sass/style.scss */
+#slide7 .top {
+  position: relative;
+  height: 300px;
+}
+/* line 455, ../sass/style.scss */
+#slide7 .top .yellow {
+  width: 546px;
+  height: 150px;
+  left: 100px;
+  background-image: url("../images/yellow-text-area-with-border.png");
+  background-repeat: no-repeat;
+  position: absolute;
+  z-index: 100;
+}
+/* line 464, ../sass/style.scss */
+#slide7 .top .yellow .text {
+  width: 380px;
+  position: absolute;
+  top: 25px;
+  left: 80px;
+  line-height: normal;
+  font-family: Bebas;
+  font-size: 30px;
+  color: white;
+  text-shadow: -1px -1px 2px rgba(100, 100, 100, 0.9);
+}
+/* line 480, ../sass/style.scss */
+#slide7 .top .black {
+  width: 780px;
+  height: 158px;
+  background-image: url("../images/black-text-area.png");
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 105px;
+}
+/* line 488, ../sass/style.scss */
+#slide7 .top .black .text {
+  line-height: normal;
+  color: white;
+  font-size: 20px;
+  top: 40px;
+  position: absolute;
+  left: 37px;
+  width: 685px;
+}
+/* line 500, ../sass/style.scss */
+#slide7 .bottom {
+  position: absolute;
+  top: 270px;
+  width: 750px;
+}
+/* line 505, ../sass/style.scss */
+#slide7 .bottom > div {
+  margin: auto;
+  margin-bottom: 20px;
+  padding: 0px 5px 0px 5px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* line 514, ../sass/style.scss */
+#slide7 .bottom .red-text-area:first-child {
+  text-align: center;
+  background-color: #82251A;
+  width: 330px;
+  font-size: 38px;
+  color: #ffffff;
+  font-family: Bebas;
+}
+/* line 518, ../sass/style.scss */
+#slide7 .bottom .red-text-area.second {
+  text-align: center;
+  background-color: #82251A;
+  width: 205px;
+  font-size: 38px;
+  color: #ffffff;
+  font-family: Bebas;
+}
+/* line 524, ../sass/style.scss */
+#slide7 .bottom .contact {
+  color: white;
+  font-size: 22px;
+}
+
+/* line 531, ../sass/style.scss */
 .impress-on-overview .step {
   opacity: 1;
   cursor: pointer;
@@ -503,7 +588,7 @@ a:focus {
 
     I know, it sounds complicated ... maybe it would be easier with the code?
 */
-/* line 490, ../sass/style.scss */
+/* line 578, ../sass/style.scss */
 .hint {
   /*
       We hide the hint until presentation is started and from browsers not supporting
@@ -555,7 +640,7 @@ a:focus {
 /*
     Now we 'enable' the hint when presentation is initialized ...
 */
-/* line 548, ../sass/style.scss */
+/* line 636, ../sass/style.scss */
 .impress-enabled .hint {
   display: block;
 }
@@ -563,7 +648,7 @@ a:focus {
 /*
     ... and we will show it when the first step (with id 'bored') is active.
 */
-/* line 555, ../sass/style.scss */
+/* line 643, ../sass/style.scss */
 .impress-on-bored .hint {
   /*
       We remove the transparency and position the hint in its default fixed
@@ -611,12 +696,12 @@ a:focus {
 
     So use it wisely ... or don't use at all.
 */
-/* line 604, ../sass/style.scss */
+/* line 692, ../sass/style.scss */
 .impress-enabled {
   pointer-events: none;
 }
 
-/* line 608, ../sass/style.scss */
+/* line 696, ../sass/style.scss */
 .impress-enabled #impress {
   pointer-events: auto;
 }
