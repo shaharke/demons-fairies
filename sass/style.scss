@@ -447,6 +447,28 @@ a:focus {
 }
 
 #slide7 {
+
+  .blue-bg-container {
+    overflow: hidden;
+    z-index: -1;
+    height:500px;
+  }
+
+  .blue-bg {
+    height: 1200px;
+    width: 2500px;
+
+    background-color: #217DA1;
+
+    @include rotate(-3deg);
+  }
+
+  .content {
+    position: absolute;
+    top:30px;
+    left: 150px;
+  }
+
   .top {
 
     position: relative;
@@ -524,6 +546,7 @@ a:focus {
     .contact {
       color:white;
       font-size: 22px;
+      text-align: center;
     }
   }
 }

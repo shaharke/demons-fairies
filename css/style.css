@@ -456,12 +456,35 @@ a:focus {
   right: 0px;
 }
 
-/* line 450, ../sass/style.scss */
+/* line 451, ../sass/style.scss */
+#slide7 .blue-bg-container {
+  overflow: hidden;
+  z-index: -1;
+  height: 500px;
+}
+/* line 457, ../sass/style.scss */
+#slide7 .blue-bg {
+  height: 1200px;
+  width: 2500px;
+  background-color: #217DA1;
+  -webkit-transform: rotate(-3deg);
+  -moz-transform: rotate(-3deg);
+  -ms-transform: rotate(-3deg);
+  -o-transform: rotate(-3deg);
+  transform: rotate(-3deg);
+}
+/* line 466, ../sass/style.scss */
+#slide7 .content {
+  position: absolute;
+  top: 30px;
+  left: 150px;
+}
+/* line 472, ../sass/style.scss */
 #slide7 .top {
   position: relative;
   height: 300px;
 }
-/* line 455, ../sass/style.scss */
+/* line 477, ../sass/style.scss */
 #slide7 .top .yellow {
   width: 546px;
   height: 150px;
@@ -471,7 +494,7 @@ a:focus {
   position: absolute;
   z-index: 100;
 }
-/* line 464, ../sass/style.scss */
+/* line 486, ../sass/style.scss */
 #slide7 .top .yellow .text {
   width: 380px;
   position: absolute;
@@ -483,7 +506,7 @@ a:focus {
   color: white;
   text-shadow: -1px -1px 2px rgba(100, 100, 100, 0.9);
 }
-/* line 480, ../sass/style.scss */
+/* line 502, ../sass/style.scss */
 #slide7 .top .black {
   width: 780px;
   height: 158px;
@@ -492,7 +515,7 @@ a:focus {
   position: absolute;
   top: 105px;
 }
-/* line 488, ../sass/style.scss */
+/* line 510, ../sass/style.scss */
 #slide7 .top .black .text {
   line-height: normal;
   color: white;
@@ -502,13 +525,13 @@ a:focus {
   left: 37px;
   width: 685px;
 }
-/* line 500, ../sass/style.scss */
+/* line 522, ../sass/style.scss */
 #slide7 .bottom {
   position: absolute;
   top: 270px;
   width: 750px;
 }
-/* line 505, ../sass/style.scss */
+/* line 527, ../sass/style.scss */
 #slide7 .bottom > div {
   margin: auto;
   margin-bottom: 20px;
@@ -517,7 +540,7 @@ a:focus {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-/* line 514, ../sass/style.scss */
+/* line 536, ../sass/style.scss */
 #slide7 .bottom .red-text-area:first-child {
   text-align: center;
   background-color: #82251A;
@@ -526,7 +549,7 @@ a:focus {
   color: #ffffff;
   font-family: Bebas;
 }
-/* line 518, ../sass/style.scss */
+/* line 540, ../sass/style.scss */
 #slide7 .bottom .red-text-area.second {
   text-align: center;
   background-color: #82251A;
@@ -535,13 +558,14 @@ a:focus {
   color: #ffffff;
   font-family: Bebas;
 }
-/* line 524, ../sass/style.scss */
+/* line 546, ../sass/style.scss */
 #slide7 .bottom .contact {
   color: white;
   font-size: 22px;
+  text-align: center;
 }
 
-/* line 531, ../sass/style.scss */
+/* line 554, ../sass/style.scss */
 .impress-on-overview .step {
   opacity: 1;
   cursor: pointer;
@@ -588,7 +612,7 @@ a:focus {
 
     I know, it sounds complicated ... maybe it would be easier with the code?
 */
-/* line 578, ../sass/style.scss */
+/* line 601, ../sass/style.scss */
 .hint {
   /*
       We hide the hint until presentation is started and from browsers not supporting
@@ -640,7 +664,7 @@ a:focus {
 /*
     Now we 'enable' the hint when presentation is initialized ...
 */
-/* line 636, ../sass/style.scss */
+/* line 659, ../sass/style.scss */
 .impress-enabled .hint {
   display: block;
 }
@@ -648,7 +672,7 @@ a:focus {
 /*
     ... and we will show it when the first step (with id 'bored') is active.
 */
-/* line 643, ../sass/style.scss */
+/* line 666, ../sass/style.scss */
 .impress-on-bored .hint {
   /*
       We remove the transparency and position the hint in its default fixed
@@ -696,12 +720,12 @@ a:focus {
 
     So use it wisely ... or don't use at all.
 */
-/* line 692, ../sass/style.scss */
+/* line 715, ../sass/style.scss */
 .impress-enabled {
   pointer-events: none;
 }
 
-/* line 696, ../sass/style.scss */
+/* line 719, ../sass/style.scss */
 .impress-enabled #impress {
   pointer-events: auto;
 }
