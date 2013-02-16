@@ -3,19 +3,30 @@
 @import "compass/css3/text-shadow";
 @import "compass/css3/font-face";
 @import "compass/css3/box-sizing";
+@import "compass/css3/box-shadow";
 
 @include font-face("Copystruct", font-files("copystruct/COPYN.woff", "copystruct/COPYN.ttf", "copystruct/COPYN.eot", "copystruct/COPYN.svg"));
 @include font-face("Bebas", font-files("bebas/BebasNeue.woff", "bebas/BebasNeue.ttf", "bebas/BebasNeue.eot", "bebas/BebasNeue.svg"));
 @include font-face("SourceSans", font-files("source-sans/SourceSansPro-Regular.woff", "source-sans/SourceSansPro-Regular.ttf", "source-sans/SourceSansPro-Regular.eot", "source-sans/SourceSansPro-Regular.svg"));
 
-@mixin blue-arrow($top, $left) {
-  background-image: url("../images/blue-arrow.png");
+@mixin arrow($top, $left) {
+
   background-repeat: no-repeat;
   height: 200px;
-  width: 300px;
+  width: 250px;
   position: absolute;
   top: $top;
   right: $left;
+}
+
+@mixin blue-arrow($top, $left) {
+  @include arrow($top, $left);
+  background-image: url("../images/blue-arrow.png");
+}
+
+@mixin white-arrow($top, $left) {
+  @include arrow($top, $left);
+  background-image: url("../images/white-arrow.png");
 }
 
 @mixin red-text-box($width) {
@@ -401,34 +412,40 @@ a:focus {
 }
 
 #slide6 {
-  .text-box {
-    background-image: url("../images/yellow-text-area.png");
-    background-repeat: no-repeat;
-    position: absolute;
-    top: 200px;
-    left: 100px;
-    width: 800px;
-    height: 225px;
+  .top-section {
 
-    .text {
-      font-size: 40px;
-      width: 660px;
+    height: 400px;
+
+    .text-box {
+      background-image: url("../images/yellow-text-area.png");
+      background-repeat: no-repeat;
       position: absolute;
-      top: 25px;
-      left: 30px;
-      color: #333333;
+      top: 50px;
+      left: 100px;
+      width: 800px;
+      height: 225px;
+      z-index: 2;
+
+      .text {
+        font-size: 40px;
+        width: 660px;
+        position: absolute;
+        top: 25px;
+        left: 30px;
+        color: #333333;
+      }
     }
-  }
-
-  .bottom-section {
-
-    position: absolute;
-    top: 400px;
-    left: 200px;
 
     .question {
+      position: absolute;
+      top: 250px;
+      left: 160px;
+
       line-height: normal;
       font-family: Bebas;
+      background-color: #333333;
+      padding: 5px 25px 5px 10px;
+      @include single-box-shadow(#333333, 2px, 2px, 10px);
 
       span {
         color: #33A9DD;
@@ -438,12 +455,59 @@ a:focus {
         color: #DBBD2D;
       }
     }
-
   }
 
-  .arrow {
-    @include blue-arrow(600px, 0px);
+
+  .bottom-section {
+    height: 220px;
+
+    .blue-bg-container {
+      overflow: hidden;
+      height:200px;
+    }
+
+    .blue-bg {
+      margin-top: 30px;
+      height: 1200px;
+      width: 2500px;
+
+      background-color: #217DA1;
+
+      @include rotate(-3deg);
+    }
+
+    .yellow {
+      width: 546px;
+      height: 150px;
+      left: 170px;
+      background-image: url("../images/yellow-text-area-with-border.png");
+      background-repeat: no-repeat;
+      position: absolute;
+      z-index: 1;
+
+      .text {
+        width: 380px;
+        position: absolute;
+        top: 25px;
+        left: 80px;
+
+        line-height: normal;
+
+        font-family: Bebas;
+        font-size: 30px;
+
+        color: #217DA1;
+        text-shadow: -1px -1px 2px rgba(100, 100, 100, 0.9);
+      }
+    }
+
+    .arrow {
+      @include white-arrow(585px, 0px);
+      z-index: 2;
+    }
   }
+
+
 }
 
 #slide7 {
