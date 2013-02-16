@@ -515,10 +515,11 @@ a:focus {
   .blue-bg-container {
     overflow: hidden;
     z-index: -1;
-    height:500px;
+    height:600px;
   }
 
   .blue-bg {
+    margin-top: 135px;
     height: 1200px;
     width: 2500px;
 
@@ -579,13 +580,17 @@ a:focus {
         position: absolute;
         left: 37px;
         width: 685px;
+
+        span {
+          color:#E6C631;
+        }
       }
     }
   }
 
   .bottom {
     position: absolute;
-    top:270px;
+    top:230px;
     width:750px;
 
     >div {
@@ -608,7 +613,7 @@ a:focus {
     }
 
     .contact {
-      color:white;
+      color: #E6C631;
       font-size: 22px;
       text-align: center;
     }
