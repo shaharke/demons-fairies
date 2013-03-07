@@ -251,13 +251,14 @@ a:focus {
   }
 
   .slide-text {
-    line-height: 48px;
-    width: 600px;
+    line-height: 41px;
+    width: 650px;
     position: absolute;
     color: #AF2819;
-    top: 520px;
-    font-size: 38px;
+    top: 527px;
+    font-size: 40px;
     left: 200px;
+    font-weight: bold;
 
   }
 }
@@ -325,6 +326,7 @@ a:focus {
     position: absolute;
     top: 115px;
     left: 200px;
+    text-align: justify;
   }
 
 }
@@ -332,17 +334,28 @@ a:focus {
 #slide4 {
 
   .content {
-    background-image: url("../images/slide4-bg.png");
+
     width: 950px;
     height: 700px;
+  }
+
+  .background {
+    position: absolute;
+    width: 780px;
+    height: 235px;
+    background-image: url("../images/slide4-bg.png");
+    background-repeat: no-repeat;
+    top: 275px;
+    left: 80px;
+
   }
 
   .slide-text {
     color: #333333;
     font-size: 54px;
     position: absolute;
-    top: 340px;
-    left: 195px;
+    top: 63px;
+    left: 62px;
   }
 }
 
@@ -360,7 +373,7 @@ a:focus {
     width: 720px;
     height: 250px;
     position: absolute;
-    top: 305px;
+    top: 275px;
     left: 80px;
   }
 
@@ -374,53 +387,23 @@ a:focus {
     letter-spacing: 2px;
   }
 
-  .mask {
-    position: absolute;
-    overflow: hidden;
-
-    &.top {
-      width: 900px;
-      height: 30px;
-      background-color: white;
-      position: absolute;
-      top: 0px;
-    }
-
-    &.bottom {
-      width: 900px;
-      height: 40px;
-      background-color: white;
-      position: absolute;
-      top: 670px;
-    }
-  }
-
-  .circle-container {
-    position: absolute;
-  }
-
-  .circle {
-    @include border-radius(50%);
-    background-color: #82251A;
-    width: 780px;
-    height: 710px;
-    z-index: -1;
-    left: 125px;
-    //position:absolute;
-
-  }
 }
 
 #slide6 {
-  .top-section {
+  .top-section-container {
+    position: relative;
+  }
 
-    height: 400px;
+  .top-section {
+    width: 700px;
+    height: 377px;
+    margin: auto;
 
     .text-box {
       background-image: url("../images/yellow-text-area.png");
       background-repeat: no-repeat;
       position: absolute;
-      top: 50px;
+      top: 0px;
       left: 100px;
       width: 800px;
       height: 225px;
@@ -428,17 +411,19 @@ a:focus {
 
       .text {
         font-size: 40px;
-        width: 660px;
+        font-weight: bold;
+        width: 685px;
         position: absolute;
-        top: 25px;
-        left: 30px;
+        top: 58px;
+        left: 41px;
         color: #333333;
+        line-height: 45px;
       }
     }
 
     .question {
       position: absolute;
-      top: 250px;
+      top: 200px;
       left: 160px;
 
       line-height: normal;
@@ -455,6 +440,49 @@ a:focus {
         color: #DBBD2D;
       }
     }
+  }
+
+  #buy-buttons {
+    height: 78px;
+
+    .button {
+      float:left;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+  }
+
+  .buttons-container {
+    width: 570px;
+    margin: auto;
+  }
+
+  .nook {
+    background-image: url("../images/nook-button.png");
+    background-repeat: no-repeat;
+    width: 132px;
+    height: 36px;
+  }
+
+  .lulu {
+    background-image: url("../images/lulu-button.png");
+    background-repeat: no-repeat;
+    width: 101px;
+    height: 54px;
+  }
+
+  .ibook {
+    background-image: url("../images/ibookstore-button.png");
+    background-repeat: no-repeat;
+    width: 116px;
+    height: 38px;
+  }
+
+  .amazon {
+    background-image: url("../images/amazon-button.png");
+    background-repeat: no-repeat;
+    width: 139px;
+    height: 63px;
   }
 
 
