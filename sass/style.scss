@@ -546,6 +546,22 @@ a:focus {
     height:600px;
   }
 
+  .paypal {
+    width: 300px;
+    margin: auto;
+
+    .form {
+      max-height: 150px;
+    }
+
+    .image-button {
+      width: 120px;
+      margin: auto;
+    }
+
+
+  }
+
   .blue-bg {
     margin-top: 135px;
     height: 1200px;
