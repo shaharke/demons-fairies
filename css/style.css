@@ -13,34 +13,7 @@
   src: url('fonts/source-sans/SourceSansPro-Regular.woff') format('woff'), url('fonts/source-sans/SourceSansPro-Regular.ttf') format('truetype'), url('fonts/source-sans/SourceSansPro-Regular.eot') format('embedded-opentype'), url('fonts/source-sans/SourceSansPro-Regular.svg') format('svg');
 }
 
-/*
-   So you like the style of impress.js demo?
-   Or maybe you are just curious how it was done?
-
-   You couldn't find a better place to find out!
-
-   Welcome to the stylesheet impress.js demo presentation.
-
-   Please remember that it is not meant to be a part of impress.js and is
-   not required by impress.js.
-   I expect that anyone creating a presentation for impress.js would create
-   their own set of styles.
-
-   But feel free to read through it and learn how to get the most of what
-   impress.js provides.
-
-   And let me be your guide.
-
-   Shall we begin?
-*/
-/*
-   We start with a good ol' reset.
-   That's the one by Eric Meyer http://meyerweb.com/eric/tools/css/reset/
-
-   You can probably argue if it is needed here, or not, but for sure it
-   doesn't do any harm and gives us a fresh start.
-*/
-/* line 68, ../sass/style.scss */
+/* line 41, ../sass/style.scss */
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
   margin: 0;
   padding: 0;
@@ -51,41 +24,41 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 }
 
 /* HTML5 display-role reset for older browsers */
-/* line 79, ../sass/style.scss */
+/* line 52, ../sass/style.scss */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
   display: block;
 }
 
-/* line 83, ../sass/style.scss */
+/* line 56, ../sass/style.scss */
 body {
   line-height: 1;
 }
 
-/* line 87, ../sass/style.scss */
+/* line 60, ../sass/style.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 91, ../sass/style.scss */
+/* line 64, ../sass/style.scss */
 blockquote, q {
   quotes: none;
 }
 
-/* line 96, ../sass/style.scss */
+/* line 69, ../sass/style.scss */
 blockquote:before, blockquote:after,
 q:before, q:after {
   content: '';
   content: none;
 }
 
-/* line 101, ../sass/style.scss */
+/* line 74, ../sass/style.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 106, ../sass/style.scss */
+/* line 79, ../sass/style.scss */
 body {
   font-family: "SourceSans";
   min-height: 740px;
@@ -94,12 +67,12 @@ body {
 /*
     Now let's bring some text styles back ...
 */
-/* line 114, ../sass/style.scss */
+/* line 87, ../sass/style.scss */
 b, strong {
   font-weight: bold;
 }
 
-/* line 118, ../sass/style.scss */
+/* line 91, ../sass/style.scss */
 i, em {
   font-style: italic;
 }
@@ -107,7 +80,7 @@ i, em {
 /*
     ... and give links a nice look.
 */
-/* line 125, ../sass/style.scss */
+/* line 98, ../sass/style.scss */
 a {
   color: inherit;
   text-decoration: none;
@@ -122,25 +95,14 @@ a {
   transition: 0.5s;
 }
 
-/* line 141, ../sass/style.scss */
+/* line 114, ../sass/style.scss */
 a:hover,
 a:focus {
   background: white;
   text-shadow: -1px -1px 2px rgba(100, 100, 100, 0.5);
 }
 
-/*
-    Because the main point behind the impress.js demo is to demo impress.js
-    we display a fallback message for users with browsers that don't support
-    all the features required by it.
-
-    All of the content will be still fully accessible for them, but I want
-    them to know that they are missing something - that's what the demo is
-    about, isn't it?
-
-    And then we hide the message, when support is detected in the browser.
-*/
-/* line 158, ../sass/style.scss */
+/* line 119, ../sass/style.scss */
 .fallback-message {
   font-family: sans-serif;
   line-height: 1.3;
@@ -152,12 +114,12 @@ a:focus {
   background: #EEDC94;
 }
 
-/* line 171, ../sass/style.scss */
+/* line 132, ../sass/style.scss */
 .fallback-message p {
   margin-bottom: 10px;
 }
 
-/* line 175, ../sass/style.scss */
+/* line 136, ../sass/style.scss */
 .impress-supported .fallback-message {
   display: none;
 }
@@ -167,7 +129,7 @@ a:focus {
 
     We start with basics to make sure it displays correctly in everywhere ...
 */
-/* line 185, ../sass/style.scss */
+/* line 146, ../sass/style.scss */
 .step {
   position: relative;
   width: 900px;
@@ -186,7 +148,7 @@ a:focus {
 
     Basically we remove the margin and make inactive steps a little bit transparent.
 */
-/* line 203, ../sass/style.scss */
+/* line 164, ../sass/style.scss */
 .impress-enabled .step {
   margin: 0;
   opacity: 0.3;
@@ -196,18 +158,18 @@ a:focus {
   -o-transition: opacity 1s;
   transition: opacity 1s;
 }
-/* line 213, ../sass/style.scss */
+/* line 174, ../sass/style.scss */
 .impress-enabled .step.active {
   opacity: 1;
 }
 
-/* line 220, ../sass/style.scss */
+/* line 181, ../sass/style.scss */
 .container {
   height: 700px;
   width: 960px;
 }
 
-/* line 227, ../sass/style.scss */
+/* line 188, ../sass/style.scss */
 #slide1 .container {
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #82251a), color-stop(100%, #eddfdd));
   background-image: -webkit-linear-gradient(#82251a, #eddfdd);
@@ -215,17 +177,17 @@ a:focus {
   background-image: -o-linear-gradient(#82251a, #eddfdd);
   background-image: linear-gradient(#82251a, #eddfdd);
 }
-/* line 231, ../sass/style.scss */
+/* line 192, ../sass/style.scss */
 #slide1 .content {
   background-image: url("../images/slide1-bg.png");
   width: 950px;
   height: 700px;
 }
-/* line 236, ../sass/style.scss */
+/* line 197, ../sass/style.scss */
 #slide1 .content::after {
   clear: both;
 }
-/* line 241, ../sass/style.scss */
+/* line 202, ../sass/style.scss */
 #slide1 #arrow-text {
   font-family: "Copystruct";
   position: absolute;
@@ -240,7 +202,7 @@ a:focus {
   -o-transform: rotate(-13deg);
   transform: rotate(-13deg);
 }
-/* line 253, ../sass/style.scss */
+/* line 214, ../sass/style.scss */
 #slide1 .slide-text {
   line-height: 41px;
   width: 650px;
@@ -252,13 +214,13 @@ a:focus {
   font-weight: bold;
 }
 
-/* line 268, ../sass/style.scss */
+/* line 229, ../sass/style.scss */
 #slide2 .content {
   background-image: url("../images/slide2-bg.png");
   width: 950px;
   height: 700px;
 }
-/* line 274, ../sass/style.scss */
+/* line 235, ../sass/style.scss */
 #slide2 .slide-text {
   position: absolute;
   color: #AF2819;
@@ -266,7 +228,7 @@ a:focus {
   font-size: 30px;
   left: 150px;
 }
-/* line 281, ../sass/style.scss */
+/* line 242, ../sass/style.scss */
 #slide2 .slide-text > :first-child {
   color: white;
   -webkit-transform: rotate(-2deg);
@@ -275,12 +237,12 @@ a:focus {
   -o-transform: rotate(-2deg);
   transform: rotate(-2deg);
 }
-/* line 287, ../sass/style.scss */
+/* line 248, ../sass/style.scss */
 #slide2 .slide-text > :first-child em {
   color: #DBBD2D;
   font-style: normal;
 }
-/* line 293, ../sass/style.scss */
+/* line 254, ../sass/style.scss */
 #slide2 .slide-text > :last-child {
   margin-top: 45px;
   margin-left: 100px;
@@ -294,7 +256,7 @@ a:focus {
   -o-transform: rotate(3deg);
   transform: rotate(3deg);
 }
-/* line 305, ../sass/style.scss */
+/* line 266, ../sass/style.scss */
 #slide2 #blue-arrow {
   background-repeat: no-repeat;
   height: 200px;
@@ -305,7 +267,7 @@ a:focus {
   background-image: url("../images/blue-arrow.png");
 }
 
-/* line 312, ../sass/style.scss */
+/* line 273, ../sass/style.scss */
 #slide3 .container {
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #82251a), color-stop(100%, #eddfdd));
   background-image: -webkit-linear-gradient(#82251a, #eddfdd);
@@ -313,13 +275,13 @@ a:focus {
   background-image: -o-linear-gradient(#82251a, #eddfdd);
   background-image: linear-gradient(#82251a, #eddfdd);
 }
-/* line 316, ../sass/style.scss */
+/* line 277, ../sass/style.scss */
 #slide3 .content {
   background-image: url("../images/slide3-bg.png");
   width: 950px;
   height: 700px;
 }
-/* line 322, ../sass/style.scss */
+/* line 283, ../sass/style.scss */
 #slide3 .slide-text {
   color: white;
   font-size: 22px;
@@ -330,12 +292,12 @@ a:focus {
   text-align: justify;
 }
 
-/* line 336, ../sass/style.scss */
+/* line 297, ../sass/style.scss */
 #slide4 .content {
   width: 950px;
   height: 700px;
 }
-/* line 342, ../sass/style.scss */
+/* line 303, ../sass/style.scss */
 #slide4 .background {
   position: absolute;
   width: 780px;
@@ -345,7 +307,7 @@ a:focus {
   top: 275px;
   left: 80px;
 }
-/* line 353, ../sass/style.scss */
+/* line 314, ../sass/style.scss */
 #slide4 .slide-text {
   color: #333333;
   font-size: 54px;
@@ -354,12 +316,12 @@ a:focus {
   left: 62px;
 }
 
-/* line 364, ../sass/style.scss */
+/* line 325, ../sass/style.scss */
 #slide5 .content {
   width: 720px;
   height: 700px;
 }
-/* line 370, ../sass/style.scss */
+/* line 331, ../sass/style.scss */
 #slide5 .text-box {
   background-image: url("../images/slide5-bg.png");
   background-repeat: no-repeat;
@@ -369,7 +331,7 @@ a:focus {
   top: 275px;
   left: 80px;
 }
-/* line 380, ../sass/style.scss */
+/* line 341, ../sass/style.scss */
 #slide5 .slide-text {
   margin: auto;
   margin-top: 55px;
@@ -380,17 +342,17 @@ a:focus {
   letter-spacing: 2px;
 }
 
-/* line 393, ../sass/style.scss */
+/* line 354, ../sass/style.scss */
 #slide6 .top-section-container {
   position: relative;
 }
-/* line 397, ../sass/style.scss */
+/* line 358, ../sass/style.scss */
 #slide6 .top-section {
   width: 700px;
   height: 377px;
   margin: auto;
 }
-/* line 402, ../sass/style.scss */
+/* line 363, ../sass/style.scss */
 #slide6 .top-section .text-box {
   background-image: url("../images/yellow-text-area.png");
   background-repeat: no-repeat;
@@ -401,7 +363,7 @@ a:focus {
   height: 225px;
   z-index: 2;
 }
-/* line 412, ../sass/style.scss */
+/* line 373, ../sass/style.scss */
 #slide6 .top-section .text-box .text {
   font-size: 40px;
   font-weight: bold;
@@ -412,7 +374,7 @@ a:focus {
   color: #333333;
   line-height: 45px;
 }
-/* line 424, ../sass/style.scss */
+/* line 385, ../sass/style.scss */
 #slide6 .top-section .question {
   position: absolute;
   top: 200px;
@@ -425,67 +387,67 @@ a:focus {
   -moz-box-shadow: 2px 2px 10px #333333;
   box-shadow: 2px 2px 10px #333333;
 }
-/* line 435, ../sass/style.scss */
+/* line 396, ../sass/style.scss */
 #slide6 .top-section .question span {
   color: #33A9DD;
 }
-/* line 439, ../sass/style.scss */
+/* line 400, ../sass/style.scss */
 #slide6 .top-section .question > div {
   color: #DBBD2D;
 }
-/* line 445, ../sass/style.scss */
+/* line 406, ../sass/style.scss */
 #slide6 #buy-buttons {
   height: 78px;
 }
-/* line 448, ../sass/style.scss */
+/* line 409, ../sass/style.scss */
 #slide6 #buy-buttons .button {
   float: left;
   padding-left: 10px;
   padding-right: 10px;
 }
-/* line 455, ../sass/style.scss */
+/* line 416, ../sass/style.scss */
 #slide6 .buttons-container {
   width: 570px;
   margin: auto;
 }
-/* line 460, ../sass/style.scss */
+/* line 421, ../sass/style.scss */
 #slide6 .nook {
   background-image: url("../images/nook-button.png");
   background-repeat: no-repeat;
   width: 132px;
   height: 36px;
 }
-/* line 467, ../sass/style.scss */
+/* line 428, ../sass/style.scss */
 #slide6 .lulu {
   background-image: url("../images/lulu-button.png");
   background-repeat: no-repeat;
   width: 101px;
   height: 54px;
 }
-/* line 474, ../sass/style.scss */
+/* line 435, ../sass/style.scss */
 #slide6 .ibook {
   background-image: url("../images/ibookstore-button.png");
   background-repeat: no-repeat;
   width: 116px;
   height: 38px;
 }
-/* line 481, ../sass/style.scss */
+/* line 442, ../sass/style.scss */
 #slide6 .amazon {
   background-image: url("../images/amazon-button.png");
   background-repeat: no-repeat;
   width: 139px;
   height: 63px;
 }
-/* line 489, ../sass/style.scss */
+/* line 450, ../sass/style.scss */
 #slide6 .bottom-section {
   height: 220px;
 }
-/* line 492, ../sass/style.scss */
+/* line 453, ../sass/style.scss */
 #slide6 .bottom-section .blue-bg-container {
   overflow: hidden;
   height: 200px;
 }
-/* line 497, ../sass/style.scss */
+/* line 458, ../sass/style.scss */
 #slide6 .bottom-section .blue-bg {
   margin-top: 30px;
   height: 1200px;
@@ -497,7 +459,7 @@ a:focus {
   -o-transform: rotate(-3deg);
   transform: rotate(-3deg);
 }
-/* line 507, ../sass/style.scss */
+/* line 468, ../sass/style.scss */
 #slide6 .bottom-section .yellow {
   width: 546px;
   height: 150px;
@@ -507,7 +469,7 @@ a:focus {
   position: absolute;
   z-index: 1;
 }
-/* line 516, ../sass/style.scss */
+/* line 477, ../sass/style.scss */
 #slide6 .bottom-section .yellow .text {
   width: 380px;
   position: absolute;
@@ -519,7 +481,7 @@ a:focus {
   color: #217DA1;
   text-shadow: -1px -1px 2px rgba(100, 100, 100, 0.9);
 }
-/* line 532, ../sass/style.scss */
+/* line 493, ../sass/style.scss */
 #slide6 .bottom-section .arrow {
   background-repeat: no-repeat;
   height: 200px;
@@ -531,27 +493,27 @@ a:focus {
   z-index: 2;
 }
 
-/* line 543, ../sass/style.scss */
+/* line 504, ../sass/style.scss */
 #slide7 .blue-bg-container {
   overflow: hidden;
   z-index: -1;
   height: 600px;
 }
-/* line 549, ../sass/style.scss */
+/* line 510, ../sass/style.scss */
 #slide7 .paypal {
   width: 300px;
   margin: auto;
 }
-/* line 553, ../sass/style.scss */
+/* line 514, ../sass/style.scss */
 #slide7 .paypal .form {
   max-height: 150px;
 }
-/* line 557, ../sass/style.scss */
+/* line 518, ../sass/style.scss */
 #slide7 .paypal .image-button {
   width: 120px;
   margin: auto;
 }
-/* line 565, ../sass/style.scss */
+/* line 526, ../sass/style.scss */
 #slide7 .blue-bg {
   margin-top: 135px;
   height: 1200px;
@@ -563,18 +525,18 @@ a:focus {
   -o-transform: rotate(-3deg);
   transform: rotate(-3deg);
 }
-/* line 575, ../sass/style.scss */
+/* line 536, ../sass/style.scss */
 #slide7 .content {
   position: absolute;
   top: 30px;
   left: 150px;
 }
-/* line 581, ../sass/style.scss */
+/* line 542, ../sass/style.scss */
 #slide7 .top {
   position: relative;
   height: 300px;
 }
-/* line 586, ../sass/style.scss */
+/* line 547, ../sass/style.scss */
 #slide7 .top .yellow {
   width: 546px;
   height: 150px;
@@ -584,7 +546,7 @@ a:focus {
   position: absolute;
   z-index: 100;
 }
-/* line 595, ../sass/style.scss */
+/* line 556, ../sass/style.scss */
 #slide7 .top .yellow .text {
   width: 380px;
   position: absolute;
@@ -596,7 +558,7 @@ a:focus {
   color: white;
   text-shadow: -1px -1px 2px rgba(100, 100, 100, 0.9);
 }
-/* line 611, ../sass/style.scss */
+/* line 572, ../sass/style.scss */
 #slide7 .top .black {
   width: 780px;
   height: 158px;
@@ -605,7 +567,7 @@ a:focus {
   position: absolute;
   top: 105px;
 }
-/* line 619, ../sass/style.scss */
+/* line 580, ../sass/style.scss */
 #slide7 .top .black .text {
   line-height: normal;
   color: white;
@@ -615,17 +577,17 @@ a:focus {
   left: 37px;
   width: 685px;
 }
-/* line 628, ../sass/style.scss */
+/* line 589, ../sass/style.scss */
 #slide7 .top .black .text span {
   color: #E6C631;
 }
-/* line 635, ../sass/style.scss */
+/* line 596, ../sass/style.scss */
 #slide7 .bottom {
   position: absolute;
   top: 230px;
   width: 750px;
 }
-/* line 640, ../sass/style.scss */
+/* line 601, ../sass/style.scss */
 #slide7 .bottom > div {
   margin: auto;
   margin-bottom: 20px;
@@ -634,7 +596,7 @@ a:focus {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-/* line 649, ../sass/style.scss */
+/* line 610, ../sass/style.scss */
 #slide7 .bottom .red-text-area:first-child {
   text-align: center;
   background-color: #82251A;
@@ -643,7 +605,7 @@ a:focus {
   color: #ffffff;
   font-family: Bebas;
 }
-/* line 653, ../sass/style.scss */
+/* line 614, ../sass/style.scss */
 #slide7 .bottom .red-text-area.second {
   text-align: center;
   background-color: #82251A;
@@ -652,70 +614,22 @@ a:focus {
   color: #ffffff;
   font-family: Bebas;
 }
-/* line 659, ../sass/style.scss */
+/* line 620, ../sass/style.scss */
 #slide7 .bottom .contact {
   color: #E6C631;
   font-size: 22px;
   text-align: center;
 }
 
-/* line 667, ../sass/style.scss */
+/* line 628, ../sass/style.scss */
 .impress-on-overview .step {
   opacity: 1;
   cursor: pointer;
 }
 
-/*
-    Now, when we have all the steps styled let's give users a hint how to navigate
-    around the presentation.
-
-    The best way to do this would be to use JavaScript, show a delayed hint for a
-    first time users, then hide it and store a status in cookie or localStorage...
-
-    But I wanted to have some CSS fun and avoid additional scripting...
-
-    Let me explain it first, so maybe the transition magic will be more readable
-    when you read the code.
-
-    First of all I wanted the hint to appear only when user is idle for a while.
-    You can't detect the 'idle' state in CSS, but I delayed a appearing of the
-    hint by 5s using transition-delay.
-
-    You also can't detect in CSS if the user is a first-time visitor, so I had to
-    make an assumption that I'll only show the hint on the first step. And when
-    the step is changed hide the hint, because I can assume that user already
-    knows how to navigate.
-
-    To summarize it - hint is shown when the user is on the first step for longer
-    than 5 seconds.
-
-    The other problem I had was caused by the fact that I wanted the hint to fade
-    in and out. It can be easily achieved by transitioning the opacity property.
-    But that also meant that the hint was always on the screen, even if totally
-    transparent. It covered part of the screen and you couldn't correctly clicked
-    through it.
-    Unfortunately you cannot transition between display `block` and `none` in pure
-    CSS, so I needed a way to not only fade out the hint but also move it out of
-    the screen.
-
-    I solved this problem by positioning the hint below the bottom of the screen
-    with CSS transform and moving it up to show it. But I also didn't want this move
-    to be visible. I wanted the hint only to fade in and out visually, so I delayed
-    the fade in transition, so it starts when the hint is already in its correct
-    position on the screen.
-
-    I know, it sounds complicated ... maybe it would be easier with the code?
-*/
-/* line 714, ../sass/style.scss */
+/* line 634, ../sass/style.scss */
 .hint {
-  /*
-      We hide the hint until presentation is started and from browsers not supporting
-      impress.js, as they will have a linear scrollable view ...
-  */
   display: none;
-  /*
-      ... and give it some fixed position and nice styles.
-  */
   position: fixed;
   left: 0;
   right: 0;
@@ -726,28 +640,12 @@ a:focus {
   font-size: 50px;
   padding: 20px;
   z-index: 100;
-  /*
-      By default we don't want the hint to be visible, so we make it transparent ...
-  */
   opacity: 0;
-  /*
-      ... and position it below the bottom of the screen (relative to it's fixed position)
-  */
   -webkit-transform: translateY(400px);
   -moz-transform: translateY(400px);
   -ms-transform: translateY(400px);
   -o-transform: translateY(400px);
   transform: translateY(400px);
-  /*
-      Now let's imagine that the hint is visible and we want to fade it out and move out
-      of the screen.
-
-      So we define the transition on the opacity property with 1s duration and another
-      transition on transform property delayed by 1s so it will happen after the fade out
-      on opacity finished.
-
-      This way user will not see the hint moving down.
-  */
   -webkit-transition: opacity 1s, -webkit-transform 0.5s 1s;
   -moz-transition: opacity 1s, -moz-transform 0.5s 1s;
   -ms-transition: opacity 1s, -ms-transform 0.5s 1s;
@@ -755,37 +653,19 @@ a:focus {
   transition: opacity 1s, transform 0.5s 1s;
 }
 
-/*
-    Now we 'enable' the hint when presentation is initialized ...
-*/
-/* line 772, ../sass/style.scss */
+/* line 666, ../sass/style.scss */
 .impress-enabled .hint {
   display: block;
 }
 
-/*
-    ... and we will show it when the first step (with id 'bored') is active.
-*/
-/* line 779, ../sass/style.scss */
+/* line 670, ../sass/style.scss */
 .impress-on-bored .hint {
-  /*
-      We remove the transparency and position the hint in its default fixed
-      position.
-  */
   opacity: 1;
   -webkit-transform: translateY(0px);
   -moz-transform: translateY(0px);
   -ms-transform: translateY(0px);
   -o-transform: translateY(0px);
   transform: translateY(0px);
-  /*
-      Now for fade in transition we have the oposite situation from the one
-      above.
-
-      First after 4.5s delay we animate the transform property to move the hint
-      into its correct position and after that we fade it in with opacity
-      transition.
-  */
   -webkit-transition: opacity 1s 5s, -webkit-transform 0.5s 4.5s;
   -moz-transition: opacity 1s 5s, -moz-transform 0.5s 4.5s;
   -ms-transition: opacity 1s 5s, -ms-transform 0.5s 4.5s;
@@ -793,49 +673,12 @@ a:focus {
   transition: opacity 1s 5s, transform 0.5s 4.5s;
 }
 
-/*
-    And as the last thing there is a workaround for quite strange bug.
-    It happens a lot in Chrome. I don't remember if I've seen it in Firefox.
-
-    Sometimes the element positioned in 3D (especially when it's moved back
-    along Z axis) is not clickable, because it falls 'behind' the <body>
-    element.
-
-    To prevent this, I decided to make <body> non clickable by setting
-    pointer-events property to `none` value.
-    Value if this property is inherited, so to make everything else clickable
-    I bring it back on the #impress element.
-
-    If you want to know more about `pointer-events` here are some docs:
-    https://developer.mozilla.org/en/CSS/pointer-events
-
-    There is one very important thing to notice about this workaround - it makes
-    everything 'unclickable' except what's in #impress element.
-
-    So use it wisely ... or don't use at all.
-*/
-/* line 828, ../sass/style.scss */
+/* line 687, ../sass/style.scss */
 .impress-enabled {
   pointer-events: none;
 }
 
-/* line 832, ../sass/style.scss */
+/* line 691, ../sass/style.scss */
 .impress-enabled #impress {
   pointer-events: auto;
 }
-
-/*
-    There is one funny thing I just realized.
-
-    Thanks to this workaround above everything except #impress element is invisible
-    for click events. That means that the hint element is also not clickable.
-    So basically all of this transforms and delayed transitions trickery was probably
-    not needed at all...
-
-    But it was fun to learn about it, wasn't it?
-*/
-/*
-    That's all I have for you in this file.
-    Thanks for reading. I hope you enjoyed it at least as much as I enjoyed writing it
-    for you.
-*/
