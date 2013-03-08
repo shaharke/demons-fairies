@@ -13,7 +13,7 @@
   src: url('fonts/source-sans/SourceSansPro-Regular.woff') format('woff'), url('fonts/source-sans/SourceSansPro-Regular.ttf') format('truetype'), url('fonts/source-sans/SourceSansPro-Regular.eot') format('embedded-opentype'), url('fonts/source-sans/SourceSansPro-Regular.svg') format('svg');
 }
 
-/* line 41, ../sass/style.scss */
+/* line 44, ../sass/style.scss */
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
   margin: 0;
   padding: 0;
@@ -24,41 +24,41 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 }
 
 /* HTML5 display-role reset for older browsers */
-/* line 52, ../sass/style.scss */
+/* line 55, ../sass/style.scss */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
   display: block;
 }
 
-/* line 56, ../sass/style.scss */
+/* line 59, ../sass/style.scss */
 body {
   line-height: 1;
 }
 
-/* line 60, ../sass/style.scss */
+/* line 63, ../sass/style.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 64, ../sass/style.scss */
+/* line 67, ../sass/style.scss */
 blockquote, q {
   quotes: none;
 }
 
-/* line 69, ../sass/style.scss */
+/* line 72, ../sass/style.scss */
 blockquote:before, blockquote:after,
 q:before, q:after {
   content: '';
   content: none;
 }
 
-/* line 74, ../sass/style.scss */
+/* line 77, ../sass/style.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 79, ../sass/style.scss */
+/* line 82, ../sass/style.scss */
 body {
   font-family: "SourceSans";
   min-height: 740px;
@@ -67,19 +67,16 @@ body {
 /*
     Now let's bring some text styles back ...
 */
-/* line 87, ../sass/style.scss */
+/* line 90, ../sass/style.scss */
 b, strong {
   font-weight: bold;
 }
 
-/* line 91, ../sass/style.scss */
+/* line 94, ../sass/style.scss */
 i, em {
   font-style: italic;
 }
 
-/*
-    ... and give links a nice look.
-*/
 /* line 98, ../sass/style.scss */
 a {
   color: inherit;
@@ -90,19 +87,18 @@ a {
   border-radius: 0.2em;
   -webkit-transition: 0.5s;
   -moz-transition: 0.5s;
-  -ms-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
 }
 
-/* line 114, ../sass/style.scss */
+/* line 115, ../sass/style.scss */
 a:hover,
 a:focus {
   background: white;
   text-shadow: -1px -1px 2px rgba(100, 100, 100, 0.5);
 }
 
-/* line 119, ../sass/style.scss */
+/* line 120, ../sass/style.scss */
 .fallback-message {
   font-family: sans-serif;
   line-height: 1.3;
@@ -114,12 +110,12 @@ a:focus {
   background: #EEDC94;
 }
 
-/* line 132, ../sass/style.scss */
+/* line 133, ../sass/style.scss */
 .fallback-message p {
   margin-bottom: 10px;
 }
 
-/* line 136, ../sass/style.scss */
+/* line 137, ../sass/style.scss */
 .impress-supported .fallback-message {
   display: none;
 }
@@ -129,7 +125,7 @@ a:focus {
 
     We start with basics to make sure it displays correctly in everywhere ...
 */
-/* line 146, ../sass/style.scss */
+/* line 147, ../sass/style.scss */
 .step {
   position: relative;
   width: 900px;
@@ -148,28 +144,29 @@ a:focus {
 
     Basically we remove the margin and make inactive steps a little bit transparent.
 */
-/* line 164, ../sass/style.scss */
+/* line 165, ../sass/style.scss */
 .impress-enabled .step {
   margin: 0;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=30);
   opacity: 0.3;
-  -webkit-transition: opacity 1s;
-  -moz-transition: opacity 1s;
-  -ms-transition: opacity 1s;
-  -o-transition: opacity 1s;
-  transition: opacity 1s;
+  -webkit-transition: opacity, 1s;
+  -moz-transition: opacity, 1s;
+  -o-transition: opacity, 1s;
+  transition: opacity, 1s;
 }
-/* line 174, ../sass/style.scss */
+/* line 171, ../sass/style.scss */
 .impress-enabled .step.active {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
   opacity: 1;
 }
 
-/* line 181, ../sass/style.scss */
+/* line 178, ../sass/style.scss */
 .container {
   height: 700px;
   width: 960px;
 }
 
-/* line 188, ../sass/style.scss */
+/* line 185, ../sass/style.scss */
 #slide1 .container {
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #82251a), color-stop(100%, #eddfdd));
   background-image: -webkit-linear-gradient(#82251a, #eddfdd);
@@ -177,17 +174,17 @@ a:focus {
   background-image: -o-linear-gradient(#82251a, #eddfdd);
   background-image: linear-gradient(#82251a, #eddfdd);
 }
-/* line 192, ../sass/style.scss */
+/* line 189, ../sass/style.scss */
 #slide1 .content {
   background-image: url("../images/slide1-bg.png");
   width: 950px;
   height: 700px;
 }
-/* line 197, ../sass/style.scss */
+/* line 194, ../sass/style.scss */
 #slide1 .content::after {
   clear: both;
 }
-/* line 202, ../sass/style.scss */
+/* line 199, ../sass/style.scss */
 #slide1 #arrow-text {
   font-family: "Copystruct";
   position: absolute;
@@ -202,7 +199,7 @@ a:focus {
   -o-transform: rotate(-13deg);
   transform: rotate(-13deg);
 }
-/* line 214, ../sass/style.scss */
+/* line 211, ../sass/style.scss */
 #slide1 .slide-text {
   line-height: 41px;
   width: 650px;
@@ -214,13 +211,13 @@ a:focus {
   font-weight: bold;
 }
 
-/* line 229, ../sass/style.scss */
+/* line 226, ../sass/style.scss */
 #slide2 .content {
   background-image: url("../images/slide2-bg.png");
   width: 950px;
   height: 700px;
 }
-/* line 235, ../sass/style.scss */
+/* line 232, ../sass/style.scss */
 #slide2 .slide-text {
   position: absolute;
   color: #AF2819;
@@ -228,7 +225,7 @@ a:focus {
   font-size: 30px;
   left: 150px;
 }
-/* line 242, ../sass/style.scss */
+/* line 239, ../sass/style.scss */
 #slide2 .slide-text > :first-child {
   color: white;
   -webkit-transform: rotate(-2deg);
@@ -237,12 +234,12 @@ a:focus {
   -o-transform: rotate(-2deg);
   transform: rotate(-2deg);
 }
-/* line 248, ../sass/style.scss */
+/* line 245, ../sass/style.scss */
 #slide2 .slide-text > :first-child em {
   color: #DBBD2D;
   font-style: normal;
 }
-/* line 254, ../sass/style.scss */
+/* line 251, ../sass/style.scss */
 #slide2 .slide-text > :last-child {
   margin-top: 45px;
   margin-left: 100px;
@@ -256,7 +253,7 @@ a:focus {
   -o-transform: rotate(3deg);
   transform: rotate(3deg);
 }
-/* line 266, ../sass/style.scss */
+/* line 263, ../sass/style.scss */
 #slide2 #blue-arrow {
   background-repeat: no-repeat;
   height: 200px;
@@ -267,7 +264,7 @@ a:focus {
   background-image: url("../images/blue-arrow.png");
 }
 
-/* line 273, ../sass/style.scss */
+/* line 270, ../sass/style.scss */
 #slide3 .container {
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #82251a), color-stop(100%, #eddfdd));
   background-image: -webkit-linear-gradient(#82251a, #eddfdd);
@@ -275,13 +272,13 @@ a:focus {
   background-image: -o-linear-gradient(#82251a, #eddfdd);
   background-image: linear-gradient(#82251a, #eddfdd);
 }
-/* line 277, ../sass/style.scss */
+/* line 274, ../sass/style.scss */
 #slide3 .content {
   background-image: url("../images/slide3-bg.png");
   width: 950px;
   height: 700px;
 }
-/* line 283, ../sass/style.scss */
+/* line 280, ../sass/style.scss */
 #slide3 .slide-text {
   color: white;
   font-size: 22px;
@@ -292,12 +289,12 @@ a:focus {
   text-align: justify;
 }
 
-/* line 297, ../sass/style.scss */
+/* line 294, ../sass/style.scss */
 #slide4 .content {
   width: 950px;
   height: 700px;
 }
-/* line 303, ../sass/style.scss */
+/* line 300, ../sass/style.scss */
 #slide4 .background {
   position: absolute;
   width: 780px;
@@ -307,7 +304,7 @@ a:focus {
   top: 275px;
   left: 80px;
 }
-/* line 314, ../sass/style.scss */
+/* line 311, ../sass/style.scss */
 #slide4 .slide-text {
   color: #333333;
   font-size: 54px;
@@ -316,12 +313,12 @@ a:focus {
   left: 62px;
 }
 
-/* line 325, ../sass/style.scss */
+/* line 322, ../sass/style.scss */
 #slide5 .content {
   width: 720px;
   height: 700px;
 }
-/* line 331, ../sass/style.scss */
+/* line 328, ../sass/style.scss */
 #slide5 .text-box {
   background-image: url("../images/slide5-bg.png");
   background-repeat: no-repeat;
@@ -331,7 +328,7 @@ a:focus {
   top: 275px;
   left: 80px;
 }
-/* line 341, ../sass/style.scss */
+/* line 338, ../sass/style.scss */
 #slide5 .slide-text {
   margin: auto;
   margin-top: 55px;
@@ -342,17 +339,17 @@ a:focus {
   letter-spacing: 2px;
 }
 
-/* line 354, ../sass/style.scss */
+/* line 351, ../sass/style.scss */
 #slide6 .top-section-container {
   position: relative;
 }
-/* line 358, ../sass/style.scss */
+/* line 355, ../sass/style.scss */
 #slide6 .top-section {
   width: 700px;
   height: 377px;
   margin: auto;
 }
-/* line 363, ../sass/style.scss */
+/* line 360, ../sass/style.scss */
 #slide6 .top-section .text-box {
   background-image: url("../images/yellow-text-area.png");
   background-repeat: no-repeat;
@@ -363,7 +360,7 @@ a:focus {
   height: 225px;
   z-index: 2;
 }
-/* line 373, ../sass/style.scss */
+/* line 370, ../sass/style.scss */
 #slide6 .top-section .text-box .text {
   font-size: 40px;
   font-weight: bold;
@@ -374,7 +371,7 @@ a:focus {
   color: #333333;
   line-height: 45px;
 }
-/* line 385, ../sass/style.scss */
+/* line 382, ../sass/style.scss */
 #slide6 .top-section .question {
   position: absolute;
   top: 200px;
@@ -387,67 +384,67 @@ a:focus {
   -moz-box-shadow: 2px 2px 10px #333333;
   box-shadow: 2px 2px 10px #333333;
 }
-/* line 396, ../sass/style.scss */
+/* line 393, ../sass/style.scss */
 #slide6 .top-section .question span {
   color: #33A9DD;
 }
-/* line 400, ../sass/style.scss */
+/* line 397, ../sass/style.scss */
 #slide6 .top-section .question > div {
   color: #DBBD2D;
 }
-/* line 406, ../sass/style.scss */
+/* line 403, ../sass/style.scss */
 #slide6 #buy-buttons {
   height: 78px;
 }
-/* line 409, ../sass/style.scss */
+/* line 406, ../sass/style.scss */
 #slide6 #buy-buttons .button {
   float: left;
   padding-left: 10px;
   padding-right: 10px;
 }
-/* line 416, ../sass/style.scss */
+/* line 413, ../sass/style.scss */
 #slide6 .buttons-container {
   width: 570px;
   margin: auto;
 }
-/* line 421, ../sass/style.scss */
+/* line 418, ../sass/style.scss */
 #slide6 .nook {
   background-image: url("../images/nook-button.png");
   background-repeat: no-repeat;
   width: 132px;
   height: 36px;
 }
-/* line 428, ../sass/style.scss */
+/* line 425, ../sass/style.scss */
 #slide6 .lulu {
   background-image: url("../images/lulu-button.png");
   background-repeat: no-repeat;
   width: 101px;
   height: 54px;
 }
-/* line 435, ../sass/style.scss */
+/* line 432, ../sass/style.scss */
 #slide6 .ibook {
   background-image: url("../images/ibookstore-button.png");
   background-repeat: no-repeat;
   width: 116px;
   height: 38px;
 }
-/* line 442, ../sass/style.scss */
+/* line 439, ../sass/style.scss */
 #slide6 .amazon {
   background-image: url("../images/amazon-button.png");
   background-repeat: no-repeat;
   width: 139px;
   height: 63px;
 }
-/* line 450, ../sass/style.scss */
+/* line 447, ../sass/style.scss */
 #slide6 .bottom-section {
   height: 220px;
 }
-/* line 453, ../sass/style.scss */
+/* line 450, ../sass/style.scss */
 #slide6 .bottom-section .blue-bg-container {
   overflow: hidden;
   height: 200px;
 }
-/* line 458, ../sass/style.scss */
+/* line 455, ../sass/style.scss */
 #slide6 .bottom-section .blue-bg {
   margin-top: 30px;
   height: 1200px;
@@ -459,7 +456,7 @@ a:focus {
   -o-transform: rotate(-3deg);
   transform: rotate(-3deg);
 }
-/* line 468, ../sass/style.scss */
+/* line 465, ../sass/style.scss */
 #slide6 .bottom-section .yellow {
   width: 546px;
   height: 150px;
@@ -469,7 +466,7 @@ a:focus {
   position: absolute;
   z-index: 1;
 }
-/* line 477, ../sass/style.scss */
+/* line 474, ../sass/style.scss */
 #slide6 .bottom-section .yellow .text {
   width: 380px;
   position: absolute;
@@ -481,7 +478,7 @@ a:focus {
   color: #217DA1;
   text-shadow: -1px -1px 2px rgba(100, 100, 100, 0.9);
 }
-/* line 493, ../sass/style.scss */
+/* line 490, ../sass/style.scss */
 #slide6 .bottom-section .arrow {
   background-repeat: no-repeat;
   height: 200px;
@@ -493,27 +490,27 @@ a:focus {
   z-index: 2;
 }
 
-/* line 504, ../sass/style.scss */
+/* line 501, ../sass/style.scss */
 #slide7 .blue-bg-container {
   overflow: hidden;
   z-index: -1;
   height: 600px;
 }
-/* line 510, ../sass/style.scss */
+/* line 507, ../sass/style.scss */
 #slide7 .paypal {
   width: 300px;
   margin: auto;
 }
-/* line 514, ../sass/style.scss */
+/* line 511, ../sass/style.scss */
 #slide7 .paypal .form {
   max-height: 150px;
 }
-/* line 518, ../sass/style.scss */
+/* line 515, ../sass/style.scss */
 #slide7 .paypal .image-button {
   width: 120px;
   margin: auto;
 }
-/* line 526, ../sass/style.scss */
+/* line 523, ../sass/style.scss */
 #slide7 .blue-bg {
   margin-top: 135px;
   height: 1200px;
@@ -525,18 +522,18 @@ a:focus {
   -o-transform: rotate(-3deg);
   transform: rotate(-3deg);
 }
-/* line 536, ../sass/style.scss */
+/* line 533, ../sass/style.scss */
 #slide7 .content {
   position: absolute;
   top: 30px;
   left: 150px;
 }
-/* line 542, ../sass/style.scss */
+/* line 539, ../sass/style.scss */
 #slide7 .top {
   position: relative;
   height: 300px;
 }
-/* line 547, ../sass/style.scss */
+/* line 544, ../sass/style.scss */
 #slide7 .top .yellow {
   width: 546px;
   height: 150px;
@@ -546,7 +543,7 @@ a:focus {
   position: absolute;
   z-index: 100;
 }
-/* line 556, ../sass/style.scss */
+/* line 553, ../sass/style.scss */
 #slide7 .top .yellow .text {
   width: 380px;
   position: absolute;
@@ -558,7 +555,7 @@ a:focus {
   color: white;
   text-shadow: -1px -1px 2px rgba(100, 100, 100, 0.9);
 }
-/* line 572, ../sass/style.scss */
+/* line 569, ../sass/style.scss */
 #slide7 .top .black {
   width: 780px;
   height: 158px;
@@ -567,7 +564,7 @@ a:focus {
   position: absolute;
   top: 105px;
 }
-/* line 580, ../sass/style.scss */
+/* line 577, ../sass/style.scss */
 #slide7 .top .black .text {
   line-height: normal;
   color: white;
@@ -577,17 +574,17 @@ a:focus {
   left: 37px;
   width: 685px;
 }
-/* line 589, ../sass/style.scss */
+/* line 586, ../sass/style.scss */
 #slide7 .top .black .text span {
   color: #E6C631;
 }
-/* line 596, ../sass/style.scss */
+/* line 593, ../sass/style.scss */
 #slide7 .bottom {
   position: absolute;
   top: 230px;
   width: 750px;
 }
-/* line 601, ../sass/style.scss */
+/* line 598, ../sass/style.scss */
 #slide7 .bottom > div {
   margin: auto;
   margin-bottom: 20px;
@@ -596,7 +593,7 @@ a:focus {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-/* line 610, ../sass/style.scss */
+/* line 607, ../sass/style.scss */
 #slide7 .bottom .red-text-area:first-child {
   text-align: center;
   background-color: #82251A;
@@ -605,7 +602,7 @@ a:focus {
   color: #ffffff;
   font-family: Bebas;
 }
-/* line 614, ../sass/style.scss */
+/* line 611, ../sass/style.scss */
 #slide7 .bottom .red-text-area.second {
   text-align: center;
   background-color: #82251A;
@@ -614,17 +611,11 @@ a:focus {
   color: #ffffff;
   font-family: Bebas;
 }
-/* line 620, ../sass/style.scss */
+/* line 617, ../sass/style.scss */
 #slide7 .bottom .contact {
   color: #E6C631;
   font-size: 22px;
   text-align: center;
-}
-
-/* line 628, ../sass/style.scss */
-.impress-on-overview .step {
-  opacity: 1;
-  cursor: pointer;
 }
 
 /*
@@ -668,7 +659,7 @@ a:focus {
 
     I know, it sounds complicated ... maybe it would be easier with the code?
 */
-/* line 676, ../sass/style.scss */
+/* line 667, ../sass/style.scss */
 .hint {
   /*
       We hide the hint until presentation is started and from browsers not supporting
@@ -710,17 +701,17 @@ a:focus {
 
       This way user will not see the hint moving down.
   */
-  -webkit-transition: opacity 1s, -webkit-transform 0.5s 1s;
-  -moz-transition: opacity 1s,    -moz-transform 0.5s 1s;
-  -ms-transition: opacity 1s,     -ms-transform 0.5s 1s;
-  -o-transition: opacity 1s,      -o-transform 0.5s 1s;
-  transition: opacity 1s,         transform 0.5s 1s;
+  -webkit-transition: opacity 1s, -webkit-transform 0.5s;
+  -webkit-transition-delay: 0s, 1s;
+  -moz-transition: opacity 1s 0s, -moz-transform 0.5s 1s;
+  -o-transition: opacity 1s 0s, -o-transform 0.5s 1s;
+  transition: opacity 1s 0s, transform 0.5s 1s;
 }
 
 /*
     Now we 'enable' the hint when presentation is initialized ...
 */
-/* line 734, ../sass/style.scss */
+/* line 717, ../sass/style.scss */
 .impress-enabled .hint {
   display: block;
 }
@@ -728,12 +719,13 @@ a:focus {
 /*
     ... and we will show it when the first step (with id 'bored') is active.
 */
-/* line 739, ../sass/style.scss */
+/* line 722, ../sass/style.scss */
 .impress-on-slide1 .hint {
   /*
       We remove the transparency and position the hint in its default fixed
       position.
   */
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
   opacity: 1;
   -webkit-transform: translateY(0px);
   -moz-transform: translateY(0px);
@@ -748,19 +740,19 @@ a:focus {
       into its correct position and after that we fade it in with opacity
       transition.
   */
-  -webkit-transition: opacity 1s 5s, -webkit-transform 0.5s 4.5s;
-  -moz-transition: opacity 1s 5s,    -moz-transform 0.5s 4.5s;
-  -ms-transition: opacity 1s 5s,     -ms-transform 0.5s 4.5s;
-  -o-transition: opacity 1s 5s,      -o-transform 0.5s 4.5s;
-  transition: opacity 1s 5s,         transform 0.5s 4.5s;
+  -webkit-transition: opacity 1s, -webkit-transform 0.5s;
+  -webkit-transition-delay: 5s, 4.5s;
+  -moz-transition: opacity 1s 5s, -moz-transform 0.5s 4.5s;
+  -o-transition: opacity 1s 5s, -o-transform 0.5s 4.5s;
+  transition: opacity 1s 5s, transform 0.5s 4.5s;
 }
 
-/* line 767, ../sass/style.scss */
+/* line 742, ../sass/style.scss */
 .impress-enabled {
   pointer-events: none;
 }
 
-/* line 771, ../sass/style.scss */
+/* line 746, ../sass/style.scss */
 .impress-enabled #impress {
   pointer-events: auto;
 }

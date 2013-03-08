@@ -4,6 +4,9 @@
 @import "compass/css3/font-face";
 @import "compass/css3/box-sizing";
 @import "compass/css3/box-shadow";
+@import "compass/css3/transition";
+@import "compass/css3/transform";
+@import "compass/css3/opacity";
 
 @include font-face("Copystruct", font-files("copystruct/COPYN.woff", "copystruct/COPYN.ttf", "copystruct/COPYN.eot", "copystruct/COPYN.svg"));
 @include font-face("Bebas", font-files("bebas/BebasNeue.woff", "bebas/BebasNeue.ttf", "bebas/BebasNeue.eot", "bebas/BebasNeue.svg"));
@@ -92,9 +95,6 @@ i, em {
   font-style: italic
 }
 
-/*
-    ... and give links a nice look.
-*/
 a {
   color: inherit;
   text-decoration: none;
@@ -103,11 +103,12 @@ a {
   text-shadow: -1px -1px 2px rgba(100, 100, 100, 0.9);
   border-radius: 0.2em;
 
-  -webkit-transition: 0.5s;
-  -moz-transition: 0.5s;
-  -ms-transition: 0.5s;
-  -o-transition: 0.5s;
-  transition: 0.5s;
+  @include transition(0.5s);
+  //-webkit-transition: 0.5s;
+  //-moz-transition: 0.5s;
+  //-ms-transition: 0.5s;
+  //-o-transition: 0.5s;
+  //transition: 0.5s;
 }
 
 a:hover,
@@ -163,16 +164,12 @@ a:focus {
 .impress-enabled {
   .step {
     margin: 0;
-    opacity: 0.3;
+    @include opacity(0.3);
 
-    -webkit-transition: opacity 1s;
-    -moz-transition: opacity 1s;
-    -ms-transition: opacity 1s;
-    -o-transition: opacity 1s;
-    transition: opacity 1s;
+    @include transition(opacity, 1s);
 
     &.active {
-      opacity: 1
+      @include opacity(1);
     }
   }
 
@@ -625,12 +622,6 @@ a:focus {
   }
 }
 
-.impress-on-overview .step {
-  opacity: 1;
-  cursor: pointer;
-}
-
-
 /*
     Now, when we have all the steps styled let's give users a hint how to navigate
     around the presentation.
@@ -705,11 +696,7 @@ a:focus {
   /*
       ... and position it below the bottom of the screen (relative to it's fixed position)
   */
-  -webkit-transform: translateY(400px);
-  -moz-transform:    translateY(400px);
-  -ms-transform:     translateY(400px);
-  -o-transform:      translateY(400px);
-  transform:         translateY(400px);
+  @include translateY(400px);
 
   /*
       Now let's imagine that the hint is visible and we want to fade it out and move out
@@ -721,11 +708,7 @@ a:focus {
 
       This way user will not see the hint moving down.
   */
-  -webkit-transition: opacity 1s, -webkit-transform 0.5s 1s;
-  -moz-transition:    opacity 1s,    -moz-transform 0.5s 1s;
-  -ms-transition:     opacity 1s,     -ms-transform 0.5s 1s;
-  -o-transition:      opacity 1s,      -o-transform 0.5s 1s;
-  transition:         opacity 1s,         transform 0.5s 1s;
+  @include transition(opacity 1s 0s, transform 0.5s 1s);
 }
 
 /*
@@ -741,13 +724,8 @@ a:focus {
       We remove the transparency and position the hint in its default fixed
       position.
   */
-  opacity: 1;
-
-  -webkit-transform: translateY(0px);
-  -moz-transform:    translateY(0px);
-  -ms-transform:     translateY(0px);
-  -o-transform:      translateY(0px);
-  transform:         translateY(0px);
+  @include opacity(1);
+  @include translateY(0px);
 
   /*
       Now for fade in transition we have the oposite situation from the one
@@ -757,11 +735,8 @@ a:focus {
       into its correct position and after that we fade it in with opacity
       transition.
   */
-  -webkit-transition: opacity 1s 5s, -webkit-transform 0.5s 4.5s;
-  -moz-transition:    opacity 1s 5s,    -moz-transform 0.5s 4.5s;
-  -ms-transition:     opacity 1s 5s,     -ms-transform 0.5s 4.5s;
-  -o-transition:      opacity 1s 5s,      -o-transform 0.5s 4.5s;
-  transition:         opacity 1s 5s,         transform 0.5s 4.5s;
+
+  @include transition(opacity 1s 5s, transform 0.5s 4.5s);
 }
 
 .impress-enabled {
