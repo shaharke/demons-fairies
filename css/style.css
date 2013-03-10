@@ -1,19 +1,9 @@
 @font-face {
-  font-family: "Copystruct";
-  src: url('fonts/copystruct/COPYN.woff') format('woff'), url('fonts/copystruct/COPYN.ttf') format('truetype'), url('fonts/copystruct/COPYN.eot') format('embedded-opentype'), url('fonts/copystruct/COPYN.svg') format('svg');
-}
-
-@font-face {
-  font-family: "Bebas";
-  src: url('fonts/bebas/BebasNeue.woff') format('woff'), url('fonts/bebas/BebasNeue.ttf') format('truetype'), url('fonts/bebas/BebasNeue.eot') format('embedded-opentype'), url('fonts/bebas/BebasNeue.svg') format('svg');
-}
-
-@font-face {
   font-family: "SourceSans";
   src: url('fonts/source-sans/SourceSansPro-Regular.woff') format('woff'), url('fonts/source-sans/SourceSansPro-Regular.ttf') format('truetype'), url('fonts/source-sans/SourceSansPro-Regular.eot') format('embedded-opentype'), url('fonts/source-sans/SourceSansPro-Regular.svg') format('svg');
 }
 
-/* line 44, ../sass/style.scss */
+/* line 6, ../sass/_standard.scss */
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
   margin: 0;
   padding: 0;
@@ -24,41 +14,41 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 }
 
 /* HTML5 display-role reset for older browsers */
-/* line 55, ../sass/style.scss */
+/* line 17, ../sass/_standard.scss */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
   display: block;
 }
 
-/* line 59, ../sass/style.scss */
+/* line 21, ../sass/_standard.scss */
 body {
   line-height: 1;
 }
 
-/* line 63, ../sass/style.scss */
+/* line 25, ../sass/_standard.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 67, ../sass/style.scss */
+/* line 29, ../sass/_standard.scss */
 blockquote, q {
   quotes: none;
 }
 
-/* line 72, ../sass/style.scss */
+/* line 34, ../sass/_standard.scss */
 blockquote:before, blockquote:after,
 q:before, q:after {
   content: '';
   content: none;
 }
 
-/* line 77, ../sass/style.scss */
+/* line 39, ../sass/_standard.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 82, ../sass/style.scss */
+/* line 44, ../sass/_standard.scss */
 body {
   font-family: "SourceSans";
   min-height: 740px;
@@ -67,17 +57,17 @@ body {
 /*
     Now let's bring some text styles back ...
 */
-/* line 90, ../sass/style.scss */
+/* line 52, ../sass/_standard.scss */
 b, strong {
   font-weight: bold;
 }
 
-/* line 94, ../sass/style.scss */
+/* line 56, ../sass/_standard.scss */
 i, em {
   font-style: italic;
 }
 
-/* line 98, ../sass/style.scss */
+/* line 60, ../sass/_standard.scss */
 a {
   color: inherit;
   text-decoration: none;
@@ -91,31 +81,29 @@ a {
   transition: 0.5s;
 }
 
-/* line 115, ../sass/style.scss */
+/* line 72, ../sass/_standard.scss */
 a:hover,
 a:focus {
   background: white;
   text-shadow: -1px -1px 2px rgba(100, 100, 100, 0.5);
 }
 
-/* line 120, ../sass/style.scss */
-.fallback-message {
-  font-family: sans-serif;
-  line-height: 1.3;
-  width: 780px;
-  padding: 10px 10px 0;
-  margin: 20px auto;
-  border: 1px solid #E4C652;
-  border-radius: 10px;
-  background: #EEDC94;
+@font-face {
+  font-family: "Copystruct";
+  src: url('fonts/copystruct/COPYN.woff') format('woff'), url('fonts/copystruct/COPYN.ttf') format('truetype'), url('fonts/copystruct/COPYN.eot') format('embedded-opentype'), url('fonts/copystruct/COPYN.svg') format('svg');
 }
 
-/* line 133, ../sass/style.scss */
+@font-face {
+  font-family: "Bebas";
+  src: url('fonts/bebas/BebasNeue.woff') format('woff'), url('fonts/bebas/BebasNeue.ttf') format('truetype'), url('fonts/bebas/BebasNeue.eot') format('embedded-opentype'), url('fonts/bebas/BebasNeue.svg') format('svg');
+}
+
+/* line 45, ../sass/style.scss */
 .fallback-message p {
   margin-bottom: 10px;
 }
 
-/* line 137, ../sass/style.scss */
+/* line 49, ../sass/style.scss */
 .impress-supported .fallback-message {
   display: none;
 }
@@ -125,7 +113,7 @@ a:focus {
 
     We start with basics to make sure it displays correctly in everywhere ...
 */
-/* line 147, ../sass/style.scss */
+/* line 59, ../sass/style.scss */
 .step {
   position: relative;
   width: 900px;
@@ -144,7 +132,7 @@ a:focus {
 
     Basically we remove the margin and make inactive steps a little bit transparent.
 */
-/* line 165, ../sass/style.scss */
+/* line 77, ../sass/style.scss */
 .impress-enabled .step {
   margin: 0;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=30);
@@ -154,19 +142,19 @@ a:focus {
   -o-transition: opacity, 1s;
   transition: opacity, 1s;
 }
-/* line 171, ../sass/style.scss */
+/* line 83, ../sass/style.scss */
 .impress-enabled .step.active {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
   opacity: 1;
 }
 
-/* line 178, ../sass/style.scss */
+/* line 90, ../sass/style.scss */
 .container {
   height: 700px;
   width: 960px;
 }
 
-/* line 185, ../sass/style.scss */
+/* line 97, ../sass/style.scss */
 #slide1 .container {
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #82251a), color-stop(100%, #eddfdd));
   background-image: -webkit-linear-gradient(#82251a, #eddfdd);
@@ -174,17 +162,17 @@ a:focus {
   background-image: -o-linear-gradient(#82251a, #eddfdd);
   background-image: linear-gradient(#82251a, #eddfdd);
 }
-/* line 189, ../sass/style.scss */
+/* line 101, ../sass/style.scss */
 #slide1 .content {
   background-image: url("../images/slide1-bg.png");
   width: 950px;
   height: 700px;
 }
-/* line 194, ../sass/style.scss */
+/* line 106, ../sass/style.scss */
 #slide1 .content::after {
   clear: both;
 }
-/* line 199, ../sass/style.scss */
+/* line 111, ../sass/style.scss */
 #slide1 #arrow-text {
   font-family: "Copystruct";
   position: absolute;
@@ -199,7 +187,7 @@ a:focus {
   -o-transform: rotate(-13deg);
   transform: rotate(-13deg);
 }
-/* line 211, ../sass/style.scss */
+/* line 123, ../sass/style.scss */
 #slide1 .slide-text {
   line-height: 41px;
   width: 650px;
@@ -211,13 +199,13 @@ a:focus {
   font-weight: bold;
 }
 
-/* line 226, ../sass/style.scss */
+/* line 138, ../sass/style.scss */
 #slide2 .content {
   background-image: url("../images/slide2-bg.png");
   width: 950px;
   height: 700px;
 }
-/* line 232, ../sass/style.scss */
+/* line 144, ../sass/style.scss */
 #slide2 .slide-text {
   position: absolute;
   color: #AF2819;
@@ -225,7 +213,7 @@ a:focus {
   font-size: 30px;
   left: 150px;
 }
-/* line 239, ../sass/style.scss */
+/* line 151, ../sass/style.scss */
 #slide2 .slide-text > :first-child {
   color: white;
   -webkit-transform: rotate(-2deg);
@@ -234,12 +222,12 @@ a:focus {
   -o-transform: rotate(-2deg);
   transform: rotate(-2deg);
 }
-/* line 245, ../sass/style.scss */
+/* line 157, ../sass/style.scss */
 #slide2 .slide-text > :first-child em {
   color: #DBBD2D;
   font-style: normal;
 }
-/* line 251, ../sass/style.scss */
+/* line 163, ../sass/style.scss */
 #slide2 .slide-text > :last-child {
   margin-top: 45px;
   margin-left: 100px;
@@ -253,7 +241,7 @@ a:focus {
   -o-transform: rotate(3deg);
   transform: rotate(3deg);
 }
-/* line 263, ../sass/style.scss */
+/* line 175, ../sass/style.scss */
 #slide2 #blue-arrow {
   background-repeat: no-repeat;
   height: 200px;
@@ -264,7 +252,7 @@ a:focus {
   background-image: url("../images/blue-arrow.png");
 }
 
-/* line 270, ../sass/style.scss */
+/* line 182, ../sass/style.scss */
 #slide3 .container {
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #82251a), color-stop(100%, #eddfdd));
   background-image: -webkit-linear-gradient(#82251a, #eddfdd);
@@ -272,13 +260,13 @@ a:focus {
   background-image: -o-linear-gradient(#82251a, #eddfdd);
   background-image: linear-gradient(#82251a, #eddfdd);
 }
-/* line 274, ../sass/style.scss */
+/* line 186, ../sass/style.scss */
 #slide3 .content {
   background-image: url("../images/slide3-bg.png");
   width: 950px;
   height: 700px;
 }
-/* line 280, ../sass/style.scss */
+/* line 192, ../sass/style.scss */
 #slide3 .slide-text {
   color: white;
   font-size: 22px;
@@ -289,12 +277,12 @@ a:focus {
   text-align: justify;
 }
 
-/* line 294, ../sass/style.scss */
+/* line 206, ../sass/style.scss */
 #slide4 .content {
   width: 950px;
   height: 700px;
 }
-/* line 300, ../sass/style.scss */
+/* line 212, ../sass/style.scss */
 #slide4 .background {
   position: absolute;
   width: 780px;
@@ -304,7 +292,7 @@ a:focus {
   top: 275px;
   left: 80px;
 }
-/* line 311, ../sass/style.scss */
+/* line 223, ../sass/style.scss */
 #slide4 .slide-text {
   color: #333333;
   font-size: 54px;
@@ -313,12 +301,12 @@ a:focus {
   left: 62px;
 }
 
-/* line 322, ../sass/style.scss */
+/* line 234, ../sass/style.scss */
 #slide5 .content {
   width: 720px;
   height: 700px;
 }
-/* line 328, ../sass/style.scss */
+/* line 240, ../sass/style.scss */
 #slide5 .text-box {
   background-image: url("../images/slide5-bg.png");
   background-repeat: no-repeat;
@@ -328,7 +316,7 @@ a:focus {
   top: 275px;
   left: 80px;
 }
-/* line 338, ../sass/style.scss */
+/* line 250, ../sass/style.scss */
 #slide5 .slide-text {
   margin: auto;
   margin-top: 55px;
@@ -339,17 +327,17 @@ a:focus {
   letter-spacing: 2px;
 }
 
-/* line 351, ../sass/style.scss */
+/* line 263, ../sass/style.scss */
 #slide6 .top-section-container {
   position: relative;
 }
-/* line 355, ../sass/style.scss */
+/* line 267, ../sass/style.scss */
 #slide6 .top-section {
   width: 700px;
   height: 377px;
   margin: auto;
 }
-/* line 360, ../sass/style.scss */
+/* line 272, ../sass/style.scss */
 #slide6 .top-section .text-box {
   background-image: url("../images/yellow-text-area.png");
   background-repeat: no-repeat;
@@ -360,7 +348,7 @@ a:focus {
   height: 225px;
   z-index: 2;
 }
-/* line 370, ../sass/style.scss */
+/* line 282, ../sass/style.scss */
 #slide6 .top-section .text-box .text {
   font-size: 40px;
   font-weight: bold;
@@ -371,7 +359,7 @@ a:focus {
   color: #333333;
   line-height: 45px;
 }
-/* line 382, ../sass/style.scss */
+/* line 294, ../sass/style.scss */
 #slide6 .top-section .question {
   position: absolute;
   top: 200px;
@@ -384,67 +372,67 @@ a:focus {
   -moz-box-shadow: 2px 2px 10px #333333;
   box-shadow: 2px 2px 10px #333333;
 }
-/* line 393, ../sass/style.scss */
+/* line 305, ../sass/style.scss */
 #slide6 .top-section .question span {
   color: #33A9DD;
 }
-/* line 397, ../sass/style.scss */
+/* line 309, ../sass/style.scss */
 #slide6 .top-section .question > div {
   color: #DBBD2D;
 }
-/* line 403, ../sass/style.scss */
+/* line 315, ../sass/style.scss */
 #slide6 #buy-buttons {
   height: 78px;
 }
-/* line 406, ../sass/style.scss */
+/* line 318, ../sass/style.scss */
 #slide6 #buy-buttons .button {
   float: left;
   padding-left: 10px;
   padding-right: 10px;
 }
-/* line 413, ../sass/style.scss */
+/* line 325, ../sass/style.scss */
 #slide6 .buttons-container {
   width: 570px;
   margin: auto;
 }
-/* line 418, ../sass/style.scss */
+/* line 330, ../sass/style.scss */
 #slide6 .nook {
   background-image: url("../images/nook-button.png");
   background-repeat: no-repeat;
   width: 132px;
   height: 36px;
 }
-/* line 425, ../sass/style.scss */
+/* line 337, ../sass/style.scss */
 #slide6 .lulu {
   background-image: url("../images/lulu-button.png");
   background-repeat: no-repeat;
   width: 101px;
   height: 54px;
 }
-/* line 432, ../sass/style.scss */
+/* line 344, ../sass/style.scss */
 #slide6 .ibook {
   background-image: url("../images/ibookstore-button.png");
   background-repeat: no-repeat;
   width: 116px;
   height: 38px;
 }
-/* line 439, ../sass/style.scss */
+/* line 351, ../sass/style.scss */
 #slide6 .amazon {
   background-image: url("../images/amazon-button.png");
   background-repeat: no-repeat;
   width: 139px;
   height: 63px;
 }
-/* line 447, ../sass/style.scss */
+/* line 359, ../sass/style.scss */
 #slide6 .bottom-section {
   height: 220px;
 }
-/* line 450, ../sass/style.scss */
+/* line 362, ../sass/style.scss */
 #slide6 .bottom-section .blue-bg-container {
   overflow: hidden;
   height: 200px;
 }
-/* line 455, ../sass/style.scss */
+/* line 367, ../sass/style.scss */
 #slide6 .bottom-section .blue-bg {
   margin-top: 30px;
   height: 1200px;
@@ -456,7 +444,7 @@ a:focus {
   -o-transform: rotate(-3deg);
   transform: rotate(-3deg);
 }
-/* line 465, ../sass/style.scss */
+/* line 377, ../sass/style.scss */
 #slide6 .bottom-section .yellow {
   width: 546px;
   height: 150px;
@@ -466,7 +454,7 @@ a:focus {
   position: absolute;
   z-index: 1;
 }
-/* line 474, ../sass/style.scss */
+/* line 386, ../sass/style.scss */
 #slide6 .bottom-section .yellow .text {
   width: 380px;
   position: absolute;
@@ -478,7 +466,7 @@ a:focus {
   color: #217DA1;
   text-shadow: -1px -1px 2px rgba(100, 100, 100, 0.9);
 }
-/* line 490, ../sass/style.scss */
+/* line 402, ../sass/style.scss */
 #slide6 .bottom-section .arrow {
   background-repeat: no-repeat;
   height: 200px;
@@ -490,27 +478,27 @@ a:focus {
   z-index: 2;
 }
 
-/* line 501, ../sass/style.scss */
+/* line 413, ../sass/style.scss */
 #slide7 .blue-bg-container {
   overflow: hidden;
   z-index: -1;
   height: 600px;
 }
-/* line 507, ../sass/style.scss */
+/* line 419, ../sass/style.scss */
 #slide7 .paypal {
   width: 300px;
   margin: auto;
 }
-/* line 511, ../sass/style.scss */
+/* line 423, ../sass/style.scss */
 #slide7 .paypal .form {
   max-height: 150px;
 }
-/* line 515, ../sass/style.scss */
+/* line 427, ../sass/style.scss */
 #slide7 .paypal .image-button {
   width: 120px;
   margin: auto;
 }
-/* line 523, ../sass/style.scss */
+/* line 435, ../sass/style.scss */
 #slide7 .blue-bg {
   margin-top: 135px;
   height: 1200px;
@@ -522,18 +510,18 @@ a:focus {
   -o-transform: rotate(-3deg);
   transform: rotate(-3deg);
 }
-/* line 533, ../sass/style.scss */
+/* line 445, ../sass/style.scss */
 #slide7 .content {
   position: absolute;
   top: 30px;
   left: 150px;
 }
-/* line 539, ../sass/style.scss */
+/* line 451, ../sass/style.scss */
 #slide7 .top {
   position: relative;
   height: 300px;
 }
-/* line 544, ../sass/style.scss */
+/* line 456, ../sass/style.scss */
 #slide7 .top .yellow {
   width: 546px;
   height: 150px;
@@ -543,7 +531,7 @@ a:focus {
   position: absolute;
   z-index: 100;
 }
-/* line 553, ../sass/style.scss */
+/* line 465, ../sass/style.scss */
 #slide7 .top .yellow .text {
   width: 380px;
   position: absolute;
@@ -555,7 +543,7 @@ a:focus {
   color: white;
   text-shadow: -1px -1px 2px rgba(100, 100, 100, 0.9);
 }
-/* line 569, ../sass/style.scss */
+/* line 481, ../sass/style.scss */
 #slide7 .top .black {
   width: 780px;
   height: 158px;
@@ -564,7 +552,7 @@ a:focus {
   position: absolute;
   top: 105px;
 }
-/* line 577, ../sass/style.scss */
+/* line 489, ../sass/style.scss */
 #slide7 .top .black .text {
   line-height: normal;
   color: white;
@@ -574,17 +562,17 @@ a:focus {
   left: 37px;
   width: 685px;
 }
-/* line 586, ../sass/style.scss */
+/* line 498, ../sass/style.scss */
 #slide7 .top .black .text span {
   color: #E6C631;
 }
-/* line 593, ../sass/style.scss */
+/* line 505, ../sass/style.scss */
 #slide7 .bottom {
   position: absolute;
   top: 230px;
   width: 750px;
 }
-/* line 598, ../sass/style.scss */
+/* line 510, ../sass/style.scss */
 #slide7 .bottom > div {
   margin: auto;
   margin-bottom: 20px;
@@ -593,7 +581,7 @@ a:focus {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-/* line 607, ../sass/style.scss */
+/* line 519, ../sass/style.scss */
 #slide7 .bottom .red-text-area:first-child {
   text-align: center;
   background-color: #82251A;
@@ -602,7 +590,7 @@ a:focus {
   color: #ffffff;
   font-family: Bebas;
 }
-/* line 611, ../sass/style.scss */
+/* line 523, ../sass/style.scss */
 #slide7 .bottom .red-text-area.second {
   text-align: center;
   background-color: #82251A;
@@ -611,7 +599,7 @@ a:focus {
   color: #ffffff;
   font-family: Bebas;
 }
-/* line 617, ../sass/style.scss */
+/* line 529, ../sass/style.scss */
 #slide7 .bottom .contact {
   color: #E6C631;
   font-size: 22px;
@@ -659,7 +647,7 @@ a:focus {
 
     I know, it sounds complicated ... maybe it would be easier with the code?
 */
-/* line 667, ../sass/style.scss */
+/* line 579, ../sass/style.scss */
 .hint {
   /*
       We hide the hint until presentation is started and from browsers not supporting
@@ -711,7 +699,7 @@ a:focus {
 /*
     Now we 'enable' the hint when presentation is initialized ...
 */
-/* line 717, ../sass/style.scss */
+/* line 629, ../sass/style.scss */
 .impress-enabled .hint {
   display: block;
 }
@@ -719,7 +707,7 @@ a:focus {
 /*
     ... and we will show it when the first step (with id 'bored') is active.
 */
-/* line 722, ../sass/style.scss */
+/* line 634, ../sass/style.scss */
 .impress-on-slide1 .hint {
   /*
       We remove the transparency and position the hint in its default fixed
@@ -727,11 +715,11 @@ a:focus {
   */
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
   opacity: 1;
-  -webkit-transform: translateY(0px);
-  -moz-transform: translateY(0px);
-  -ms-transform: translateY(0px);
-  -o-transform: translateY(0px);
-  transform: translateY(0px);
+  -webkit-transform: translateY(200px);
+  -moz-transform: translateY(200px);
+  -ms-transform: translateY(200px);
+  -o-transform: translateY(200px);
+  transform: translateY(200px);
   /*
       Now for fade in transition we have the oposite situation from the one
       above.
@@ -741,18 +729,18 @@ a:focus {
       transition.
   */
   -webkit-transition: opacity 1s, -webkit-transform 0.5s;
-  -webkit-transition-delay: 5s, 4.5s;
-  -moz-transition: opacity 1s 5s, -moz-transform 0.5s 4.5s;
-  -o-transition: opacity 1s 5s, -o-transform 0.5s 4.5s;
-  transition: opacity 1s 5s, transform 0.5s 4.5s;
+  -webkit-transition-delay: 2s, 1.5s;
+  -moz-transition: opacity 1s 2s, -moz-transform 0.5s 1.5s;
+  -o-transition: opacity 1s 2s, -o-transform 0.5s 1.5s;
+  transition: opacity 1s 2s, transform 0.5s 1.5s;
 }
 
-/* line 742, ../sass/style.scss */
+/* line 654, ../sass/style.scss */
 .impress-enabled {
   pointer-events: none;
 }
 
-/* line 746, ../sass/style.scss */
+/* line 658, ../sass/style.scss */
 .impress-enabled #impress {
   pointer-events: auto;
 }

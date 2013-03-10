@@ -1,16 +1,17 @@
 @import "compass/css3";
 @import "compass/css3/transform";
 @import "compass/css3/text-shadow";
-@import "compass/css3/font-face";
 @import "compass/css3/box-sizing";
 @import "compass/css3/box-shadow";
 @import "compass/css3/transition";
 @import "compass/css3/transform";
 @import "compass/css3/opacity";
 
+@import "standard";
+
 @include font-face("Copystruct", font-files("copystruct/COPYN.woff", "copystruct/COPYN.ttf", "copystruct/COPYN.eot", "copystruct/COPYN.svg"));
 @include font-face("Bebas", font-files("bebas/BebasNeue.woff", "bebas/BebasNeue.ttf", "bebas/BebasNeue.eot", "bebas/BebasNeue.svg"));
-@include font-face("SourceSans", font-files("source-sans/SourceSansPro-Regular.woff", "source-sans/SourceSansPro-Regular.ttf", "source-sans/SourceSansPro-Regular.eot", "source-sans/SourceSansPro-Regular.svg"));
+
 
 @mixin arrow($top, $left) {
 
@@ -39,95 +40,6 @@
   font-size: 38px;
   color: #ffffff;
   font-family: Bebas;
-}
-
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-}
-
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-  display: block;
-}
-
-body {
-  line-height: 1;
-}
-
-ol, ul {
-  list-style: none;
-}
-
-blockquote, q {
-  quotes: none;
-}
-
-blockquote:before, blockquote:after,
-q:before, q:after {
-  content: '';
-  content: none;
-}
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-body {
-  font-family: "SourceSans";
-  min-height: 740px;
-}
-
-/*
-    Now let's bring some text styles back ...
-*/
-b, strong {
-  font-weight: bold
-}
-
-i, em {
-  font-style: italic
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-  padding: 0 0.1em;
-  background: rgba(255, 255, 255, 0.5);
-  text-shadow: -1px -1px 2px rgba(100, 100, 100, 0.9);
-  border-radius: 0.2em;
-
-  @include transition(0.5s);
-  //-webkit-transition: 0.5s;
-  //-moz-transition: 0.5s;
-  //-ms-transition: 0.5s;
-  //-o-transition: 0.5s;
-  //transition: 0.5s;
-}
-
-a:hover,
-a:focus {
-  background: rgba(255, 255, 255, 1);
-  text-shadow: -1px -1px 2px rgba(100, 100, 100, 0.5);
-}
-
-.fallback-message {
-  font-family: sans-serif;
-  line-height: 1.3;
-
-  width: 780px;
-  padding: 10px 10px 0;
-  margin: 20px auto;
-
-  border: 1px solid #E4C652;
-  border-radius: 10px;
-  background: #EEDC94;
 }
 
 .fallback-message p {
@@ -725,7 +637,7 @@ a:focus {
       position.
   */
   @include opacity(1);
-  @include translateY(0px);
+  @include translateY(200px);
 
   /*
       Now for fade in transition we have the oposite situation from the one
@@ -736,7 +648,7 @@ a:focus {
       transition.
   */
 
-  @include transition(opacity 1s 5s, transform 0.5s 4.5s);
+  @include transition(opacity 1s 2s, transform 0.5s 1.5s);
 }
 
 .impress-enabled {

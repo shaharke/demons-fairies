@@ -1,0 +1,129 @@
+@font-face {
+  font-family: "SourceSans";
+  src: url('fonts/source-sans/SourceSansPro-Regular.woff') format('woff'), url('fonts/source-sans/SourceSansPro-Regular.ttf') format('truetype'), url('fonts/source-sans/SourceSansPro-Regular.eot') format('embedded-opentype'), url('fonts/source-sans/SourceSansPro-Regular.svg') format('svg');
+}
+
+/* line 6, ../sass/_standard.scss */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+/* line 17, ../sass/_standard.scss */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* line 21, ../sass/_standard.scss */
+body {
+  line-height: 1;
+}
+
+/* line 25, ../sass/_standard.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 29, ../sass/_standard.scss */
+blockquote, q {
+  quotes: none;
+}
+
+/* line 34, ../sass/_standard.scss */
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+/* line 39, ../sass/_standard.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 44, ../sass/_standard.scss */
+body {
+  font-family: "SourceSans";
+  min-height: 740px;
+}
+
+/*
+    Now let's bring some text styles back ...
+*/
+/* line 52, ../sass/_standard.scss */
+b, strong {
+  font-weight: bold;
+}
+
+/* line 56, ../sass/_standard.scss */
+i, em {
+  font-style: italic;
+}
+
+/* line 60, ../sass/_standard.scss */
+a {
+  color: inherit;
+  text-decoration: none;
+  padding: 0 0.1em;
+  background: rgba(255, 255, 255, 0.5);
+  text-shadow: -1px -1px 2px rgba(100, 100, 100, 0.9);
+  border-radius: 0.2em;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+
+/* line 72, ../sass/_standard.scss */
+a:hover,
+a:focus {
+  background: white;
+  text-shadow: -1px -1px 2px rgba(100, 100, 100, 0.5);
+}
+
+@font-face {
+  font-family: "Bebas";
+  src: url('fonts/bebas/BebasNeue.woff') format('woff'), url('fonts/bebas/BebasNeue.ttf') format('truetype'), url('fonts/bebas/BebasNeue.eot') format('embedded-opentype'), url('fonts/bebas/BebasNeue.svg') format('svg');
+}
+
+/* line 7, ../sass/thanks.scss */
+.content {
+  position: relative;
+  width: 479px;
+  height: 146px;
+}
+
+/* line 13, ../sass/thanks.scss */
+.red {
+  width: 289px;
+  height: 88px;
+  background-image: url("../images/thanks-red-textarea.png");
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0px;
+  left: 145px;
+  font-family: "Bebas";
+}
+/* line 24, ../sass/thanks.scss */
+.red .text {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-family: "SourceSans";
+}
+
+/* line 32, ../sass/thanks.scss */
+.yellow {
+  margin-top: 34px;
+}
+/* line 35, ../sass/thanks.scss */
+.yellow span {
+  position: absolute;
+}
