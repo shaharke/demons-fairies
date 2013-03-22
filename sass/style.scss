@@ -122,13 +122,13 @@
 
   .slide-text {
     line-height: 41px;
+    font-family: "SourceSansBold";
     width: 650px;
     position: absolute;
     color: #AF2819;
     top: 527px;
     font-size: 40px;
     left: 200px;
-    font-weight: bold;
 
   }
 }
@@ -281,7 +281,7 @@
 
       .text {
         font-size: 40px;
-        font-weight: bold;
+        font-family: "SourceSansBold";
         width: 685px;
         position: absolute;
         top: 58px;
@@ -323,7 +323,7 @@
   }
 
   .buttons-container {
-    width: 570px;
+    width: 610px;
     margin: auto;
   }
 

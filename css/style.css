@@ -3,7 +3,12 @@
   src: url('fonts/source-sans/SourceSansPro-Regular.woff') format('woff'), url('fonts/source-sans/SourceSansPro-Regular.ttf') format('truetype'), url('fonts/source-sans/SourceSansPro-Regular.eot') format('embedded-opentype'), url('fonts/source-sans/SourceSansPro-Regular.svg') format('svg');
 }
 
-/* line 6, ../sass/_standard.scss */
+@font-face {
+  font-family: "SourceSansBold";
+  src: url('fonts/source-sans/SourceSansPro-Bold.woff') format('woff'), url('fonts/source-sans/SourceSansPro-Bold.ttf') format('truetype'), url('fonts/source-sans/SourceSansPro-Bold.eot') format('embedded-opentype'), url('fonts/source-sans/SourceSansPro-Bold.svg') format('svg');
+}
+
+/* line 7, ../sass/_standard.scss */
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
   margin: 0;
   padding: 0;
@@ -14,41 +19,41 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 }
 
 /* HTML5 display-role reset for older browsers */
-/* line 17, ../sass/_standard.scss */
+/* line 18, ../sass/_standard.scss */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
   display: block;
 }
 
-/* line 21, ../sass/_standard.scss */
+/* line 22, ../sass/_standard.scss */
 body {
   line-height: 1;
 }
 
-/* line 25, ../sass/_standard.scss */
+/* line 26, ../sass/_standard.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 29, ../sass/_standard.scss */
+/* line 30, ../sass/_standard.scss */
 blockquote, q {
   quotes: none;
 }
 
-/* line 34, ../sass/_standard.scss */
+/* line 35, ../sass/_standard.scss */
 blockquote:before, blockquote:after,
 q:before, q:after {
   content: '';
   content: none;
 }
 
-/* line 39, ../sass/_standard.scss */
+/* line 40, ../sass/_standard.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 44, ../sass/_standard.scss */
+/* line 45, ../sass/_standard.scss */
 body {
   font-family: "SourceSans";
   min-height: 740px;
@@ -57,17 +62,17 @@ body {
 /*
     Now let's bring some text styles back ...
 */
-/* line 52, ../sass/_standard.scss */
+/* line 53, ../sass/_standard.scss */
 b, strong {
   font-weight: bold;
 }
 
-/* line 56, ../sass/_standard.scss */
+/* line 57, ../sass/_standard.scss */
 i, em {
   font-style: italic;
 }
 
-/* line 60, ../sass/_standard.scss */
+/* line 61, ../sass/_standard.scss */
 a {
   color: inherit;
   text-decoration: none;
@@ -81,7 +86,7 @@ a {
   transition: 0.5s;
 }
 
-/* line 72, ../sass/_standard.scss */
+/* line 73, ../sass/_standard.scss */
 a:hover,
 a:focus {
   background: white;
@@ -190,13 +195,13 @@ a:focus {
 /* line 123, ../sass/style.scss */
 #slide1 .slide-text {
   line-height: 41px;
+  font-family: "SourceSansBold";
   width: 650px;
   position: absolute;
   color: #AF2819;
   top: 527px;
   font-size: 40px;
   left: 200px;
-  font-weight: bold;
 }
 
 /* line 138, ../sass/style.scss */
@@ -351,7 +356,7 @@ a:focus {
 /* line 282, ../sass/style.scss */
 #slide6 .top-section .text-box .text {
   font-size: 40px;
-  font-weight: bold;
+  font-family: "SourceSansBold";
   width: 685px;
   position: absolute;
   top: 58px;
@@ -392,7 +397,7 @@ a:focus {
 }
 /* line 325, ../sass/style.scss */
 #slide6 .buttons-container {
-  width: 570px;
+  width: 610px;
   margin: auto;
 }
 /* line 330, ../sass/style.scss */
