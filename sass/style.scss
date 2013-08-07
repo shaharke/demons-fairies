@@ -102,6 +102,8 @@
     background-image: url("../images/slide1-bg.png");
     width: 950px;
     height: 700px;
+    position: relative;
+    overflow: hidden;
 
     &::after {
       clear: both;
@@ -111,69 +113,51 @@
   #arrow-text {
     font-family: "Copystruct";
     position: absolute;
-    top: 356px;
-    left: 60px;
-    font-size: 20px;
-    width: 243px;
-    color: #30A1D3;
-
-    @include rotate(-13deg);
+    top: 50px;
+    left: 40px;
+    font-size: 26px;
+    width: 383px;
+    color: white;
+    text-transform: uppercase;
   }
 
-  .slide-text {
-    line-height: 41px;
-    font-family: "SourceSansBold";
-    width: 650px;
+
+
+  .textbox {
+    background-image: url("../images/slide1-yellow-textbox.png");
+    background-repeat: no-repeat;
     position: absolute;
-    color: #AF2819;
-    top: 527px;
-    font-size: 40px;
-    left: 200px;
+    width: 525px;
+    height: 310px;
+    top:220px;
+    left: -30px;
 
-  }
-}
-
-#slide2 {
-
-  .content {
-    background-image: url("../images/slide2-bg.png");
-    width: 950px;
-    height: 700px;
-  }
-
-  .slide-text {
-    position: absolute;
-    color: #AF2819;
-    top: 325px;
-    font-size: 30px;
-    left: 150px;
-
-    &>:first-child {
-
-      color: white;
-
-      @include rotate(-2deg);
-
-      em {
-        color: #DBBD2D;
-        font-style: normal;
-      }
-    }
-
-    &>:last-child {
-      margin-top: 45px;
-      margin-left: 100px;
-      font-size: 50px;
-      color: #DBBD2D;
-      font-family: "Bebas";
-
-      @include text-shadow(black 3px 4px 1px);
-      @include rotate(3deg);
+    .slide-text {
+      line-height: 41px;
+      font-family: "SourceSansBold";
+      width: 430px;
+      position: absolute;
+      color: #AF2819;
+      font-size: 40px;
+      left: 40px;
+      top: 40px;
+      text-align: center;
     }
   }
 
-  #blue-arrow {
-    @include blue-arrow(480px, -100px);
+  .tvbox {
+    background-image: url("../images/slide1-tv-box.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 350px;
+    height: 350px;
+    top: 415px;
+    left: 430px;
+
+    .youtube-container {
+      padding-top: 7px;
+      padding-left: 7px;
+    }
   }
 }
 
@@ -209,54 +193,47 @@
     height: 700px;
   }
 
-  .background {
+  .yellow-text-box {
     position: absolute;
     width: 780px;
     height: 235px;
     background-image: url("../images/slide4-bg.png");
     background-repeat: no-repeat;
-    top: 275px;
+    top: 100px;
     left: 80px;
 
+    .slide-text {
+      color: #333333;
+      top: 50px;
+      left: 30px;
+
+    }
+
   }
 
-  .slide-text {
-    color: #333333;
-    font-size: 54px;
+  .black-text-box {
     position: absolute;
-    top: 63px;
-    left: 62px;
-  }
-}
-
-#slide5 {
-
-  .content {
-    width: 720px;
-    height: 700px;
-
-  }
-
-  .text-box {
-    background-image: url("../images/slide5-bg.png");
+    width: 780px;
+    height: 235px;
+    background-image: url("../images/black-textbox.png");
     background-repeat: no-repeat;
-    width: 720px;
-    height: 250px;
-    position: absolute;
-    top: 275px;
-    left: 80px;
+    top: 260px;
+    left: 380px;
+
+    .slide-text {
+      color: #f3d018;
+      top: 60px;
+      left: 105px;
+      width: 440px;
+    }
+
   }
 
   .slide-text {
-    margin: auto;
-    margin-top: 55px;
-    color: #F0D032;
-    font-size: 45px;
-    width: 600px;
-    line-height: normal;
-    letter-spacing: 2px;
+    font-size: 34px;
+    position: absolute;
+    font-family: SourceSansBold;
   }
-
 }
 
 #slide6 {
