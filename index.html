@@ -64,9 +64,18 @@
                 </div>
                 <div class="tvbox">
                     <div class=youtube-container>
-                        <iframe id="ytplayer" type="text/html" width="337" height="252"
-                                src="http://www.youtube.com/embed/Z_-yRYqgQCA?autoplay=0"
-                                frameborder="0"/>
+                        <!--<iframe id="ytplayer" type="text/html" width="337" height="252"-->
+                                <!--src="http://www.youtube.com/embed/Z_-yRYqgQCA?autoplay=0"-->
+                                <!--frameborder="0"/>-->
+                        <object width="337" height="252">
+                            <param name="movie"
+                                   value="http://www.youtube.com/v/Z_-yRYqgQCA?autoplay=0"></param>
+                            <param name="allowScriptAccess" value="always"></param>
+                            <embed src="http://www.youtube.com/v/Z_-yRYqgQCA?autoplay=0"
+                                   type="application/x-shockwave-flash"
+                                   allowscriptaccess="always"
+                                   width="337" height="252"></embed>
+                        </object>
                     </div>
                 </div>
             </div>
