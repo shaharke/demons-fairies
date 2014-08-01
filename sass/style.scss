@@ -33,15 +33,6 @@
   background-image: url("../images/white-arrow.png");
 }
 
-@mixin red-text-box($width) {
-  text-align: center;
-  background-color: #82251A;
-  width: $width;
-  font-size: 38px;
-  color: #ffffff;
-  font-family: Bebas;
-}
-
 .fallback-message p {
   margin-bottom: 10px;
 }
@@ -383,47 +374,77 @@
     .blue-bg-container {
       overflow: hidden;
       height:200px;
-    }
 
-    .blue-bg {
-      margin-top: 30px;
-      height: 1200px;
-      width: 2500px;
+      .bottom-container {
 
-      background-color: #217DA1;
-
-      @include rotate(-3deg);
-    }
-
-    .yellow {
-      width: 546px;
-      height: 150px;
-      left: 170px;
-      background-image: url("../images/yellow-text-area-with-border.png");
-      background-repeat: no-repeat;
-      position: absolute;
-      z-index: 1;
-
-      .text {
-        width: 380px;
         position: absolute;
-        top: 25px;
-        left: 80px;
+        z-index: 1;
+        left: 200px;
 
-        line-height: normal;
+        .bottom-text {
 
-        font-family: Bebas;
-        font-size: 30px;
+          margin-top: -15px;
 
-        color: #217DA1;
-        text-shadow: -1px -1px 2px rgba(100, 100, 100, 0.9);
+          .red-text-area {
+
+            @include rotate(0deg);
+
+            text-align: center;
+            background-color: #82251A;
+            width: 120px;
+            font-size: 22px;
+            color: #ffffff;
+            font-family: Bebas;
+
+          }
+
+          .contact {
+            color: #342F2D;
+            font-size: 18px;
+            font-weight: bold;
+            font-family: Bebas;
+          }
+
+        }
+
+        .yellow {
+          width: 546px;
+          height: 150px;
+          background-image: url("../images/yellow-text-area-with-border.png");
+          background-repeat: no-repeat;
+
+          .text {
+            width: 405px;
+            position: absolute;
+            top: 25px;
+            left: 80px;
+
+            line-height: normal;
+
+            font-family: Bebas;
+            font-size: 30px;
+
+            color: #217DA1;
+            text-shadow: -1px -1px 2px rgba(100, 100, 100, 0.9);
+          }
+        }
+
+      }
+
+      .blue-bg {
+        margin-top: 30px;
+        height: 1200px;
+        width: 2500px;
+
+        background-color: #217DA1;
+
+        @include rotate(-3deg);
+
       }
     }
 
-    .arrow {
-      @include white-arrow(585px, 0px);
-      z-index: 2;
-    }
+
+
   }
 
 
@@ -535,23 +556,6 @@
       @include box-sizing(border-box);
     }
 
-    .red-text-area {
-
-      &:first-child {
-        @include red-text-box(330px);
-      }
-
-      &.second{
-        @include red-text-box(205px);
-      }
-
-    }
-
-    .contact {
-      color: #E6C631;
-      font-size: 22px;
-      text-align: center;
-    }
   }
 }
 
