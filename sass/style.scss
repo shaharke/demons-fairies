@@ -292,7 +292,7 @@
       z-index: 2;
 
       .text {
-        font-size: 40px;
+        font-size: 37px;
         font-family: "SourceSansBold";
         width: 685px;
         position: absolute;
@@ -310,61 +310,16 @@
 
       line-height: normal;
       font-family: Bebas;
-      background-color: #333333;
       padding: 5px 25px 5px 10px;
-      @include single-box-shadow(#333333, 2px, 2px, 10px);
 
       span {
         color: #33A9DD;
       }
 
       >div {
-        color: #DBBD2D;
+        color: #333333;
       }
     }
-  }
-
-  #buy-buttons {
-    height: 78px;
-
-    .button {
-      float:left;
-      padding-left: 10px;
-      padding-right: 10px;
-    }
-  }
-
-  .buttons-container {
-    width: 610px;
-    margin: auto;
-  }
-
-  .nook {
-    background-image: url("../images/nook-button.png");
-    background-repeat: no-repeat;
-    width: 132px;
-    height: 36px;
-  }
-
-  .lulu {
-    background-image: url("../images/lulu-button.png");
-    background-repeat: no-repeat;
-    width: 101px;
-    height: 54px;
-  }
-
-  .ibook {
-    background-image: url("../images/ibookstore-button.png");
-    background-repeat: no-repeat;
-    width: 116px;
-    height: 38px;
-  }
-
-  .amazon {
-    background-image: url("../images/amazon-button.png");
-    background-repeat: no-repeat;
-    width: 139px;
-    height: 63px;
   }
 
 
@@ -373,13 +328,71 @@
 
     .blue-bg-container {
       overflow: hidden;
-      height:200px;
+      height:350px;
 
       .bottom-container {
 
         position: absolute;
         z-index: 1;
         left: 200px;
+        margin-top: 40px;
+
+        #buy-buttons {
+          height: 78px;
+
+          .button {
+            float:left;
+            padding-left: 10px;
+            padding-right: 10px;
+          }
+        }
+
+        .buttons-container {
+          width: 610px;
+          margin: auto;
+        }
+
+        .nook {
+          background-image: url("../images/nook-button.png");
+          background-repeat: no-repeat;
+          width: 132px;
+          height: 36px;
+        }
+
+        .lulu {
+          background-image: url("../images/lulu-button.png");
+          background-repeat: no-repeat;
+          width: 101px;
+          height: 54px;
+        }
+
+        .ibook {
+          background-image: url("../images/ibookstore-button.png");
+          background-repeat: no-repeat;
+          width: 116px;
+          height: 38px;
+        }
+
+        .amazon {
+          background-image: url("../images/amazon-button.png");
+          background-repeat: no-repeat;
+          width: 139px;
+          height: 63px;
+        }
+
+        .purchase-option {
+
+          @include rotate(0deg);
+
+          margin: 10px auto;
+          text-align: center;
+          background-color: #82251A;
+          width: 200px;
+          font-size: 22px;
+          color: #ffffff;
+          font-family: Bebas;
+
+        }
 
         .bottom-text {
 
@@ -395,14 +408,17 @@
             font-size: 22px;
             color: #ffffff;
             font-family: Bebas;
+            float: left;
 
           }
 
           .contact {
-            color: #342F2D;
+            margin-left: 10px;
+            margin-top:5px;
+            color: #ffffff;
             font-size: 18px;
-            font-weight: bold;
             font-family: Bebas;
+            float: left;
           }
 
         }
