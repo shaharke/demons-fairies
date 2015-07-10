@@ -322,6 +322,67 @@
     }
   }
 
+  #buy-buttons {
+    height: 78px;
+
+    .button {
+      float:left;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+  }
+
+  .buttons-container {
+    width: 610px;
+    margin: auto;
+
+    >a {
+      display:block
+    }
+  }
+
+  .nook {
+    background-image: url("../images/nook-button.png");
+    background-repeat: no-repeat;
+    width: 132px;
+    height: 36px;
+  }
+
+  .lulu {
+    background-image: url("../images/lulu-button.png");
+    background-repeat: no-repeat;
+    width: 101px;
+    height: 54px;
+  }
+
+  .ibook {
+    background-image: url("../images/ibookstore-button.png");
+    background-repeat: no-repeat;
+    width: 116px;
+    height: 38px;
+  }
+
+  .amazon {
+    background-image: url("../images/amazon-button.png");
+    background-repeat: no-repeat;
+    width: 139px;
+    height: 63px;
+  }
+
+  .purchase-option {
+
+    @include rotate(0deg);
+
+    margin: 10px auto;
+    text-align: center;
+    background-color: #82251A;
+    width: 200px;
+    font-size: 22px;
+    color: #ffffff;
+    font-family: Bebas;
+
+  }
+
 
   .bottom-section {
     height: 220px;
@@ -336,63 +397,6 @@
         z-index: 1;
         left: 200px;
         margin-top: 40px;
-
-        #buy-buttons {
-          height: 78px;
-
-          .button {
-            float:left;
-            padding-left: 10px;
-            padding-right: 10px;
-          }
-        }
-
-        .buttons-container {
-          width: 610px;
-          margin: auto;
-        }
-
-        .nook {
-          background-image: url("../images/nook-button.png");
-          background-repeat: no-repeat;
-          width: 132px;
-          height: 36px;
-        }
-
-        .lulu {
-          background-image: url("../images/lulu-button.png");
-          background-repeat: no-repeat;
-          width: 101px;
-          height: 54px;
-        }
-
-        .ibook {
-          background-image: url("../images/ibookstore-button.png");
-          background-repeat: no-repeat;
-          width: 116px;
-          height: 38px;
-        }
-
-        .amazon {
-          background-image: url("../images/amazon-button.png");
-          background-repeat: no-repeat;
-          width: 139px;
-          height: 63px;
-        }
-
-        .purchase-option {
-
-          @include rotate(0deg);
-
-          margin: 10px auto;
-          text-align: center;
-          background-color: #82251A;
-          width: 200px;
-          font-size: 22px;
-          color: #ffffff;
-          font-family: Bebas;
-
-        }
 
         .bottom-text {
 

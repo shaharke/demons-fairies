@@ -400,67 +400,55 @@ a:focus {
 #slide6 .top-section .question > div {
   color: #333333;
 }
-/* line 326, ../sass/style.scss */
-#slide6 .bottom-section {
-  height: 220px;
-}
-/* line 329, ../sass/style.scss */
-#slide6 .bottom-section .blue-bg-container {
-  overflow: hidden;
-  height: 350px;
-}
-/* line 333, ../sass/style.scss */
-#slide6 .bottom-section .blue-bg-container .bottom-container {
-  position: absolute;
-  z-index: 1;
-  left: 200px;
-  margin-top: 40px;
-}
-/* line 340, ../sass/style.scss */
-#slide6 .bottom-section .blue-bg-container .bottom-container #buy-buttons {
+/* line 325, ../sass/style.scss */
+#slide6 #buy-buttons {
   height: 78px;
 }
-/* line 343, ../sass/style.scss */
-#slide6 .bottom-section .blue-bg-container .bottom-container #buy-buttons .button {
+/* line 328, ../sass/style.scss */
+#slide6 #buy-buttons .button {
   float: left;
   padding-left: 10px;
   padding-right: 10px;
 }
-/* line 350, ../sass/style.scss */
-#slide6 .bottom-section .blue-bg-container .bottom-container .buttons-container {
+/* line 335, ../sass/style.scss */
+#slide6 .buttons-container {
   width: 610px;
   margin: auto;
 }
-/* line 355, ../sass/style.scss */
-#slide6 .bottom-section .blue-bg-container .bottom-container .nook {
+/* line 339, ../sass/style.scss */
+#slide6 .buttons-container > a {
+  display: block;
+}
+/* line 344, ../sass/style.scss */
+#slide6 .nook {
   background-image: url("../images/nook-button.png");
   background-repeat: no-repeat;
   width: 132px;
   height: 36px;
 }
-/* line 362, ../sass/style.scss */
-#slide6 .bottom-section .blue-bg-container .bottom-container .lulu {
+/* line 351, ../sass/style.scss */
+#slide6 .lulu {
   background-image: url("../images/lulu-button.png");
   background-repeat: no-repeat;
   width: 101px;
   height: 54px;
 }
-/* line 369, ../sass/style.scss */
-#slide6 .bottom-section .blue-bg-container .bottom-container .ibook {
+/* line 358, ../sass/style.scss */
+#slide6 .ibook {
   background-image: url("../images/ibookstore-button.png");
   background-repeat: no-repeat;
   width: 116px;
   height: 38px;
 }
-/* line 376, ../sass/style.scss */
-#slide6 .bottom-section .blue-bg-container .bottom-container .amazon {
+/* line 365, ../sass/style.scss */
+#slide6 .amazon {
   background-image: url("../images/amazon-button.png");
   background-repeat: no-repeat;
   width: 139px;
   height: 63px;
 }
-/* line 383, ../sass/style.scss */
-#slide6 .bottom-section .blue-bg-container .bottom-container .purchase-option {
+/* line 372, ../sass/style.scss */
+#slide6 .purchase-option {
   -webkit-transform: rotate(0deg);
   -moz-transform: rotate(0deg);
   -ms-transform: rotate(0deg);
@@ -474,11 +462,27 @@ a:focus {
   color: #ffffff;
   font-family: Bebas;
 }
-/* line 397, ../sass/style.scss */
+/* line 387, ../sass/style.scss */
+#slide6 .bottom-section {
+  height: 220px;
+}
+/* line 390, ../sass/style.scss */
+#slide6 .bottom-section .blue-bg-container {
+  overflow: hidden;
+  height: 350px;
+}
+/* line 394, ../sass/style.scss */
+#slide6 .bottom-section .blue-bg-container .bottom-container {
+  position: absolute;
+  z-index: 1;
+  left: 200px;
+  margin-top: 40px;
+}
+/* line 401, ../sass/style.scss */
 #slide6 .bottom-section .blue-bg-container .bottom-container .bottom-text {
   margin-top: -15px;
 }
-/* line 401, ../sass/style.scss */
+/* line 405, ../sass/style.scss */
 #slide6 .bottom-section .blue-bg-container .bottom-container .bottom-text .red-text-area {
   -webkit-transform: rotate(0deg);
   -moz-transform: rotate(0deg);
@@ -493,7 +497,7 @@ a:focus {
   font-family: Bebas;
   float: left;
 }
-/* line 415, ../sass/style.scss */
+/* line 419, ../sass/style.scss */
 #slide6 .bottom-section .blue-bg-container .bottom-container .bottom-text .contact {
   margin-left: 10px;
   margin-top: 5px;
@@ -502,14 +506,14 @@ a:focus {
   font-family: Bebas;
   float: left;
 }
-/* line 426, ../sass/style.scss */
+/* line 430, ../sass/style.scss */
 #slide6 .bottom-section .blue-bg-container .bottom-container .yellow {
   width: 546px;
   height: 150px;
   background-image: url("../images/yellow-text-area-with-border.png");
   background-repeat: no-repeat;
 }
-/* line 432, ../sass/style.scss */
+/* line 436, ../sass/style.scss */
 #slide6 .bottom-section .blue-bg-container .bottom-container .yellow .text {
   width: 405px;
   position: absolute;
@@ -521,7 +525,7 @@ a:focus {
   color: #217DA1;
   text-shadow: -1px -1px 2px rgba(100, 100, 100, 0.9);
 }
-/* line 450, ../sass/style.scss */
+/* line 454, ../sass/style.scss */
 #slide6 .bottom-section .blue-bg-container .blue-bg {
   margin-top: 30px;
   height: 1200px;
@@ -534,27 +538,27 @@ a:focus {
   transform: rotate(-3deg);
 }
 
-/* line 471, ../sass/style.scss */
+/* line 475, ../sass/style.scss */
 #slide7 .blue-bg-container {
   overflow: hidden;
   z-index: -1;
   height: 600px;
 }
-/* line 477, ../sass/style.scss */
+/* line 481, ../sass/style.scss */
 #slide7 .paypal {
   width: 300px;
   margin: auto;
 }
-/* line 481, ../sass/style.scss */
+/* line 485, ../sass/style.scss */
 #slide7 .paypal .form {
   max-height: 150px;
 }
-/* line 485, ../sass/style.scss */
+/* line 489, ../sass/style.scss */
 #slide7 .paypal .image-button {
   width: 120px;
   margin: auto;
 }
-/* line 493, ../sass/style.scss */
+/* line 497, ../sass/style.scss */
 #slide7 .blue-bg {
   margin-top: 135px;
   height: 1200px;
@@ -566,18 +570,18 @@ a:focus {
   -o-transform: rotate(-3deg);
   transform: rotate(-3deg);
 }
-/* line 503, ../sass/style.scss */
+/* line 507, ../sass/style.scss */
 #slide7 .content {
   position: absolute;
   top: 30px;
   left: 150px;
 }
-/* line 509, ../sass/style.scss */
+/* line 513, ../sass/style.scss */
 #slide7 .top {
   position: relative;
   height: 300px;
 }
-/* line 514, ../sass/style.scss */
+/* line 518, ../sass/style.scss */
 #slide7 .top .yellow {
   width: 546px;
   height: 150px;
@@ -587,7 +591,7 @@ a:focus {
   position: absolute;
   z-index: 100;
 }
-/* line 523, ../sass/style.scss */
+/* line 527, ../sass/style.scss */
 #slide7 .top .yellow .text {
   width: 380px;
   position: absolute;
@@ -599,7 +603,7 @@ a:focus {
   color: white;
   text-shadow: -1px -1px 2px rgba(100, 100, 100, 0.9);
 }
-/* line 539, ../sass/style.scss */
+/* line 543, ../sass/style.scss */
 #slide7 .top .black {
   width: 780px;
   height: 158px;
@@ -608,7 +612,7 @@ a:focus {
   position: absolute;
   top: 105px;
 }
-/* line 547, ../sass/style.scss */
+/* line 551, ../sass/style.scss */
 #slide7 .top .black .text {
   line-height: normal;
   color: white;
@@ -618,17 +622,17 @@ a:focus {
   left: 37px;
   width: 685px;
 }
-/* line 556, ../sass/style.scss */
+/* line 560, ../sass/style.scss */
 #slide7 .top .black .text span {
   color: #E6C631;
 }
-/* line 563, ../sass/style.scss */
+/* line 567, ../sass/style.scss */
 #slide7 .bottom {
   position: absolute;
   top: 230px;
   width: 750px;
 }
-/* line 568, ../sass/style.scss */
+/* line 572, ../sass/style.scss */
 #slide7 .bottom > div {
   margin: auto;
   margin-bottom: 20px;
@@ -679,7 +683,7 @@ a:focus {
 
     I know, it sounds complicated ... maybe it would be easier with the code?
 */
-/* line 620, ../sass/style.scss */
+/* line 624, ../sass/style.scss */
 .hint {
   /*
       We hide the hint until presentation is started and from browsers not supporting
@@ -731,7 +735,7 @@ a:focus {
 /*
     Now we 'enable' the hint when presentation is initialized ...
 */
-/* line 670, ../sass/style.scss */
+/* line 674, ../sass/style.scss */
 .impress-enabled .hint {
   display: block;
 }
@@ -739,7 +743,7 @@ a:focus {
 /*
     ... and we will show it when the first step (with id 'bored') is active.
 */
-/* line 675, ../sass/style.scss */
+/* line 679, ../sass/style.scss */
 .impress-on-slide1 .hint {
   /*
       We remove the transparency and position the hint in its default fixed
@@ -767,12 +771,12 @@ a:focus {
   transition: opacity 1s 2s, transform 0.5s 1.5s;
 }
 
-/* line 695, ../sass/style.scss */
+/* line 699, ../sass/style.scss */
 .impress-enabled {
   pointer-events: none;
 }
 
-/* line 699, ../sass/style.scss */
+/* line 703, ../sass/style.scss */
 .impress-enabled #impress {
   pointer-events: auto;
 }
