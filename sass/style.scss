@@ -371,9 +371,8 @@
 
   .purchase-option {
 
-    @include rotate(0deg);
-
-    margin: 10px auto;
+    margin: auto;
+    margin-bottom: 10px;
     text-align: center;
     background-color: #82251A;
     width: 275px;
@@ -381,6 +380,13 @@
     color: #ffffff;
     font-family: Bebas;
 
+  }
+
+  #paypal-button {
+
+    >form {
+      margin-left: 245px;
+    }
   }
 
 
